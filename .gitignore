@@ -6,3 +6,5 @@ Thumbs.db
 /*.dotCover
 /_ReSharper*
 /packages
+/CSharpSyntax.dll
+/CSharpSyntax.pdb
