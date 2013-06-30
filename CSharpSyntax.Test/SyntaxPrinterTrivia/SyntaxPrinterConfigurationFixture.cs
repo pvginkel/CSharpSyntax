@@ -142,15 +142,10 @@ namespace CSharpSyntax.Test.SyntaxPrinterTrivia
       <WrapLongLines>true</WrapLongLines>
       <RightMargin>121</RightMargin>
       <WrapFormalParameters>ChopIfLong</WrapFormalParameters>
-      <PreferWrapBeforeParenInDeclaration>true</PreferWrapBeforeParenInDeclaration>
-      <PreferWrapAfterParenInDeclaration>true</PreferWrapAfterParenInDeclaration>
       <WrapInvocationArguments>ChopIfLong</WrapInvocationArguments>
-      <PreferWrapBeforeParenInInvocation>true</PreferWrapBeforeParenInInvocation>
-      <PreferWrapAfterParenInInvocation>true</PreferWrapAfterParenInInvocation>
       <PreferWrapAfterDotInMethodCalls>true</PreferWrapAfterDotInMethodCalls>
       <WrapChainedMethodCalls>ChopAlways</WrapChainedMethodCalls>
       <WrapExtendsImplementsList>ChopIfLong</WrapExtendsImplementsList>
-      <PreferWrapBeforeColon>true</PreferWrapBeforeColon>
       <WrapForStatementHeader>ChopAlways</WrapForStatementHeader>
       <WrapTernaryExpression>ChopAlways</WrapTernaryExpression>
       <WrapMultipleDeclarations>ChopAlways</WrapMultipleDeclarations>
@@ -160,8 +155,6 @@ namespace CSharpSyntax.Test.SyntaxPrinterTrivia
       <ForceChopCompoundConditionInDoStatement>true</ForceChopCompoundConditionInDoStatement>
       <WrapMultipleTypeParameterConstraints>ChopAlways</WrapMultipleTypeParameterConstraints>
       <WrapObjectAndCollectionInitializers>ChopAlways</WrapObjectAndCollectionInitializers>
-      <PreferWrapBeforeFirstConstraint>true</PreferWrapBeforeFirstConstraint>
-      <PreferWrapBeforeTypeParametersOpeningAngle>true</PreferWrapBeforeTypeParametersOpeningAngle>
     </LineWrapping>
     <Other>
       <PlaceAbstractAutoPropertyIndexerEventDeclarationOnSingleLine>false</PlaceAbstractAutoPropertyIndexerEventDeclarationOnSingleLine>
@@ -170,7 +163,6 @@ namespace CSharpSyntax.Test.SyntaxPrinterTrivia
       <PlaceSimpleMethodOnSingleLine>true</PlaceSimpleMethodOnSingleLine>
       <PlaceSimpleAnonymousMethodOnSingleLine>true</PlaceSimpleAnonymousMethodOnSingleLine>
       <PlaceLinqExpressionOnSingleLine>true</PlaceLinqExpressionOnSingleLine>
-      <PlaceSimpleArrayObjectCollectionOnSingleLine>true</PlaceSimpleArrayObjectCollectionOnSingleLine>
       <PlaceTypeAttributeOnSingleLine>true</PlaceTypeAttributeOnSingleLine>
       <PlaceMethodAttributeOnSameLine>true</PlaceMethodAttributeOnSameLine>
       <PlacePropertyIndexerEventAttributeOnSameLine>true</PlacePropertyIndexerEventAttributeOnSameLine>
@@ -251,24 +243,17 @@ namespace CSharpSyntax.Test.SyntaxPrinterTrivia
       <AfterBaseTypesListColon>false</AfterBaseTypesListColon>
       <AroundDot>true</AroundDot>
       <AroundLambdaArrow>false</AroundLambdaArrow>
-      <BeforeSingleLineAccessorsBlock>false</BeforeSingleLineAccessorsBlock>
-      <WithinSingleLineAccessor>false</WithinSingleLineAccessor>
-      <BetweenAccessorsInSingleLinePropertyEvent>false</BetweenAccessorsInSingleLinePropertyEvent>
       <SpacesBetweenEmptyBraces>true</SpacesBetweenEmptyBraces>
-      <WithinSingleLineMethod>false</WithinSingleLineMethod>
-      <WithinSingleLineAnonymousMethod>false</WithinSingleLineAnonymousMethod>
       <WithinAttributeBrackets>true</WithinAttributeBrackets>
       <BeforeArrayRankBrackets>true</BeforeArrayRankBrackets>
       <WithinArrayRankBrackets>true</WithinArrayRankBrackets>
       <WithinArrayRankEmptyBrackets>true</WithinArrayRankEmptyBrackets>
-      <WithinSingleLineInitializerBraces>true</WithinSingleLineInitializerBraces>
       <BeforeSemicolon>true</BeforeSemicolon>
       <BeforeColonInCaseStatement>true</BeforeColonInCaseStatement>
       <BeforeNullableMark>true</BeforeNullableMark>
       <BeforeTypeParameterConstraintColon>false</BeforeTypeParameterConstraintColon>
       <AfterTypeParameterConstraintColon>false</AfterTypeParameterConstraintColon>
       <AroundEqualsInNamespaceAliasDirective>false</AroundEqualsInNamespaceAliasDirective>
-      <BeforeEndOfLineComment>false</BeforeEndOfLineComment>
     </Other>
   </Spaces>
   <Other>
@@ -297,17 +282,13 @@ namespace CSharpSyntax.Test.SyntaxPrinterTrivia
     </Modifiers>
     <AlignMultiLineConstructs>
       <MethodParameters>true</MethodParameters>
-      <FirstCallArgumentsByParen>true</FirstCallArgumentsByParen>
       <CallArguments>true</CallArguments>
       <ListOfBaseClassesAndInterfaces>true</ListOfBaseClassesAndInterfaces>
       <Expression>true</Expression>
       <ChainedBinaryExpressions>true</ChainedBinaryExpressions>
-      <ChainedMethodCalls>true</ChainedMethodCalls>
       <ArrayObjectCollectionInitializer>true</ArrayObjectCollectionInitializer>
-      <AnonymousMethodBody>true</AnonymousMethodBody>
       <ForStatementHeader>true</ForStatementHeader>
       <MultipleDeclarations>true</MultipleDeclarations>
-      <TypeParametersList>true</TypeParametersList>
       <TypeParameterConstraints>true</TypeParameterConstraints>
       <LinqQuery>true</LinqQuery>
     </AlignMultiLineConstructs>
@@ -315,7 +296,6 @@ namespace CSharpSyntax.Test.SyntaxPrinterTrivia
       <SpecialElseIfTreatment>false</SpecialElseIfTreatment>
       <IndentCaseFromSwitch>false</IndentCaseFromSwitch>
       <IndentNestedUsingStatements>true</IndentNestedUsingStatements>
-      <DoNotIndentCommentsStartedAtFirstColumn>true</DoNotIndentCommentsStartedAtFirstColumn>
     </Other>
   </Other>
 </Configuration>",
