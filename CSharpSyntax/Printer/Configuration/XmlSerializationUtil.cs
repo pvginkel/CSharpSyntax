@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharpSyntax.Printer.Configuration
 {
@@ -19,7 +18,7 @@ namespace CSharpSyntax.Printer.Configuration
                 var defaultValueAttribute = property.GetCustomAttribute<DefaultValueAttribute>();
 
                 if (defaultValueAttribute != null)
-                    property.SetValue(obj, defaultValueAttribute.Value);
+                    property.SetValue(obj, defaultValueAttribute.Value, null);
             }
         }
     }

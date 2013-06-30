@@ -4,8 +4,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+using System.Xml;
 using System.Xml.Serialization;
 
 namespace CSharpSyntax.Printer.Configuration
@@ -104,10 +103,24 @@ namespace CSharpSyntax.Printer.Configuration
 
         public override string ToString()
         {
-            // We go through XDocument.Parse because this properly indents
-            // the generated XML.
+            var doc = new XmlDocument();
 
-            return XDocument.Parse(Serialization.SerializeXml(this)).ToString();
+            doc.LoadXml(Serialization.SerializeXml(this));
+
+            using (var writer = new StringWriter())
+            {
+                using (var xmlWriter = XmlWriter.Create(writer, new XmlWriterSettings
+                {
+                    Indent = true,
+                    IndentChars = "  ",
+                    OmitXmlDeclaration = true
+                }))
+                {
+                    doc.Save(xmlWriter);
+                }
+
+                return writer.GetStringBuilder().ToString();
+            }
         }
     }
 }

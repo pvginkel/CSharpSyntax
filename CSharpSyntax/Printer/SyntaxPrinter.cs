@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharpSyntax.Printer
 {
@@ -1185,7 +1184,7 @@ namespace CSharpSyntax.Printer
 
         private void WriteTypeModifiers(Modifiers modifiers)
         {
-            bool partial = modifiers.HasFlag(Modifiers.Partial);
+            bool partial = (modifiers & Modifiers.Partial) != 0;
             modifiers = modifiers & ~Modifiers.Partial;
 
             if (modifiers != Modifiers.None)
@@ -1884,7 +1883,7 @@ namespace CSharpSyntax.Printer
                 _writer.WriteSpace();
             }
 
-            if (node.Modifiers.HasFlag(Modifiers.Const))
+            if ((node.Modifiers & Modifiers.Const) != 0)
             {
                 _writer.WriteKeyword(PrinterKeyword.Const);
                 _writer.WriteSpace();
@@ -2389,7 +2388,7 @@ namespace CSharpSyntax.Printer
 
             _writer.WriteIndent();
 
-            if (node.Modifiers.HasFlag(Modifiers.Const))
+            if ((node.Modifiers & Modifiers.Const) != 0)
             {
                 _writer.WriteKeyword(PrinterKeyword.Const);
                 _writer.WriteSpace();
