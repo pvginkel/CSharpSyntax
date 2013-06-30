@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CBBCFFF7-131B-43A1-9DF4-6EF33F0D2181}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharpSyntax.Test</RootNamespace>
+    <AssemblyName>CSharpSyntax.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\Support\Key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\AlignMultilineConstructsFixture.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\BlankLinesFixture.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\BracesLayoutFixture.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\LineWrappingFixture.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\MiscellaneousFixture.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\OtherLineBreaksAndWrapping.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\OtherModifiersFixture.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\OtherOtherFixture.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\PlaceOnNewLineFixture.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\SpacesAroundOperatorsFixture.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\SpacesBeforeParenthesesFixture.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\SpacesOtherFixture.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\SpacesTernaryOperatorFixture.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\SpacesWithinParentheses.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\SyntaxPrinterConfigurationFixture.cs" />
+    <Compile Include="SyntaxPrinterConfiguration\TestBase.cs" />
+    <Compile Include="SyntaxPrinterTrivia\AsyncFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\AttributeListFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\ClassDeclarationFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\CompilationUnitFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\ConstructorDeclarationFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\ConversionOperatorDeclarationFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\DelegateDeclarationFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\DoStatementFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\EnumDeclarationFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\EventDeclarationFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\EventFieldDeclarationFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\ExpressionStatementFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\FieldDeclarationFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\ForEachStatementFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\ForStatementFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\GotoStatementFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\IfStatementFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\IndexerDeclarationFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\LabeledStatementFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\LocalDeclarationFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\LockStatementFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\MethodDeclarationFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\MiscellaneousStatementsFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\MiscellaneousTriviaFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\NamespaceDeclarationFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\OperatorDeclarationFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\PropertyDeclarationFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\ReturnStatementFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\SwitchStatementFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\TestBase.cs" />
+    <Compile Include="SyntaxPrinterTrivia\ThrowStatementFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\AlignMultilineConstructsFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinterTrivia\BlankLinesFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinterTrivia\BracesLayoutFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinterTrivia\OtherLineBreaksAndWrapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinterTrivia\OtherOtherFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinterTrivia\SpacesAroundOperatorsFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinterTrivia\SpacesTernaryOperatorFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinterTrivia\SyntaxPrinterConfigurationFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinterTrivia\TryStatementFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\UsingStatementFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\WhileStatementFixture.cs" />
+    <Compile Include="SyntaxPrinterTrivia\YieldStatementFixture.cs" />
+    <Compile Include="SyntaxPrinter\AnonymousMethodExpressionFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\AnonymousObjectCreationExpressionFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\ArrayCreationExpressionFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\AsyncFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\AttributeListFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\BinaryExpressionFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\CastExpressionFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\ClassDeclarationFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\CompilationUnitFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\ConstructorDeclarationFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\ConversionOperatorDeclarationFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\DelegateDeclarationFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\DoStatementFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\ElementAccessFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\EnumDeclarationFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\EventDeclarationFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\EventFieldDeclarationFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\ExpressionStatementFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\FieldDeclarationFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\ForEachStatementFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\ForStatementFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\GotoStatementFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\IfStatementFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\ImplicitArrayCreationExpressionFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\IndexerDeclarationFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\InvocationExpressionFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\LabeledStatementFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\LinqExpressionFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\LocalDeclarationFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\LockStatementFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\MethodDeclarationFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\MiscellaneousExpressionsFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\MiscellaneousStatementsFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\NamespaceDeclarationFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\ObjectCreationExpressionFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\OperatorDeclarationFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\ParenthesizedLambdaExpressionFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\ParseNameFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\PostfixUnaryExpressionFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\PrefixUnaryExpressionFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\PropertyDeclarationFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\ReturnStatementFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\SimpleLambdaExpressionFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\SwitchStatementFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\ThrowStatementFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\TryStatementFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\UsingStatementFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\WhileStatementFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyntaxPrinter\YieldStatementFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSharpSyntax\CSharpSyntax.csproj">
+      <Project>{2599ad78-93d4-498c-a2a9-865e4eca0d9e}</Project>
+      <Name>CSharpSyntax</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Support\Key.snk">
+      <Link>Key.snk</Link>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
