@@ -177,15 +177,45 @@ identifier returns [IdentifierNameSyntax value]
       }
     ;
 
-IDENTIFIER
-	: LETTER (LETTER|'0'..'9')*
+
+fragment
+IDENTIFIER_START_ASCII
+	: 'a'..'z' | 'A'..'Z' | '_'
+	;
+
+/*
+The first two alternatives define how ANTLR can match ASCII characters which can be
+considered as part of an identifier. The last alternative matches other characters
+in the unicode range that can be sonsidered as part of an identifier.
+*/
+fragment
+IDENTIFIER_PART
+	: '0'..'9'
+	| IDENTIFIER_START_ASCII
+	| { IsIdentifierPartUnicode(input.LA(1)) }? { MatchAny(); }
 	;
 
 fragment
-LETTER
-	: 'A'..'Z'
-	| 'a'..'z'
-	| '_'
+IDENTIFIER_NAME_ASCII_START
+	: IDENTIFIER_START_ASCII IDENTIFIER_PART*
+	;
+
+/*
+The second alternative acts as an action driven fallback to evaluate other
+characters in the unicode range than the ones in the ASCII subset. Due to the
+first alternative this grammar defines enough so that ANTLR can generate a
+lexer that correctly predicts identifiers with characters in the ASCII range.
+In that way keywords, other reserved words and ASCII identifiers are recognized
+with standard ANTLR driven logic. When the first character for an identifier
+fails to  match this ASCII definition, the lexer calls
+ConsumeIdentifierUnicodeStart because of the action in the alternative. This
+method checks whether the character matches as first character in ranges other
+than ASCII and consumes further characters belonging to the identifier with
+help of mIdentifierPart generated out of the IDENTIFIER_PART rule above.
+*/
+IDENTIFIER
+	: IDENTIFIER_NAME_ASCII_START
+	| { ConsumeIdentifierUnicodeStart(); }
 	;
 
 WS

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// $ANTLR 3.4.1.9004 ..\\..\\NameParsing\\CSharpNames.g 2013-06-02 10:53:40
+// $ANTLR 3.4.1.9004 ..\\..\\NameParsing\\CSharpNames.g 2013-10-26 10:43:17
 
 // The variable 'variable' is assigned but its value is never used.
 #pragma warning disable 219
@@ -38,14 +38,14 @@ namespace  CSharpSyntax.NameParsing
  internal  partial class CSharpNamesParser : Antlr.Runtime.Parser
 {
 	internal static readonly string[] tokenNames = new string[] {
-		"<invalid>", "<EOR>", "<DOWN>", "<UP>", "IDENTIFIER", "LETTER", "WS", "','", "'.'", "'::'", "'<'", "'>'", "'?'", "'['", "']'", "'bool'", "'byte'", "'char'", "'decimal'", "'double'", "'float'", "'int'", "'long'", "'object'", "'sbyte'", "'short'", "'string'", "'uint'", "'ulong'", "'ushort'", "'void'"
+		"<invalid>", "<EOR>", "<DOWN>", "<UP>", "IDENTIFIER", "IDENTIFIER_NAME_ASCII_START", "IDENTIFIER_PART", "IDENTIFIER_START_ASCII", "WS", "','", "'.'", "'::'", "'<'", "'>'", "'?'", "'['", "']'", "'bool'", "'byte'", "'char'", "'decimal'", "'double'", "'float'", "'int'", "'long'", "'object'", "'sbyte'", "'short'", "'string'", "'uint'", "'ulong'", "'ushort'", "'void'"
 	};
 	public const int EOF=-1;
 	public const int IDENTIFIER=4;
-	public const int LETTER=5;
-	public const int WS=6;
-	public const int T__7=7;
-	public const int T__8=8;
+	public const int IDENTIFIER_NAME_ASCII_START=5;
+	public const int IDENTIFIER_PART=6;
+	public const int IDENTIFIER_START_ASCII=7;
+	public const int WS=8;
 	public const int T__9=9;
 	public const int T__10=10;
 	public const int T__11=11;
@@ -68,6 +68,8 @@ namespace  CSharpSyntax.NameParsing
 	public const int T__28=28;
 	public const int T__29=29;
 	public const int T__30=30;
+	public const int T__31=31;
+	public const int T__32=32;
 
 	public CSharpNamesParser(ITokenStream input)
 		: this(input, new RecognizerSharedState())
@@ -457,11 +459,11 @@ namespace  CSharpSyntax.NameParsing
 			try { DebugEnterDecision(2, false);
 			int LA2_1 = input.LA(1);
 
-			if ((LA2_1==13))
+			if ((LA2_1==15))
 			{
 				int LA2_2 = input.LA(2);
 
-				if ((LA2_2==14))
+				if ((LA2_2==16))
 				{
 					int LA2_3 = input.LA(3);
 
@@ -481,7 +483,7 @@ namespace  CSharpSyntax.NameParsing
 						throw nvae;
 					}
 				}
-				else if ((LA2_2==7))
+				else if ((LA2_2==9))
 				{
 					int LA2_3 = input.LA(3);
 
@@ -526,7 +528,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(58, 7);
-				char_literal2=(CommonToken)Match(input,13,Follow._13_in_array_ranks211); if (state.failed) return retval;
+				char_literal2=(CommonToken)Match(input,15,Follow._15_in_array_ranks211); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				char_literal2_tree = (CommonTree)adaptor.Create(char_literal2);
 				adaptor.AddChild(root_0, char_literal2_tree);
@@ -538,7 +540,7 @@ namespace  CSharpSyntax.NameParsing
 				if (state.failed) return retval;
 				if (state.backtracking == 0) adaptor.AddChild(root_0, cl.Tree);
 				DebugLocation(58, 25);
-				char_literal3=(CommonToken)Match(input,14,Follow._14_in_array_ranks217); if (state.failed) return retval;
+				char_literal3=(CommonToken)Match(input,16,Follow._16_in_array_ranks217); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				char_literal3_tree = (CommonTree)adaptor.Create(char_literal3);
 				adaptor.AddChild(root_0, char_literal3_tree);
@@ -567,7 +569,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(62, 7);
-				char_literal4=(CommonToken)Match(input,13,Follow._13_in_array_ranks231); if (state.failed) return retval;
+				char_literal4=(CommonToken)Match(input,15,Follow._15_in_array_ranks231); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				char_literal4_tree = (CommonTree)adaptor.Create(char_literal4);
 				adaptor.AddChild(root_0, char_literal4_tree);
@@ -579,7 +581,7 @@ namespace  CSharpSyntax.NameParsing
 				if (state.failed) return retval;
 				if (state.backtracking == 0) adaptor.AddChild(root_0, cl.Tree);
 				DebugLocation(62, 25);
-				char_literal5=(CommonToken)Match(input,14,Follow._14_in_array_ranks237); if (state.failed) return retval;
+				char_literal5=(CommonToken)Match(input,16,Follow._16_in_array_ranks237); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				char_literal5_tree = (CommonTree)adaptor.Create(char_literal5);
 				adaptor.AddChild(root_0, char_literal5_tree);
@@ -688,7 +690,7 @@ namespace  CSharpSyntax.NameParsing
 				if (state.failed) return retval;
 				if (state.backtracking == 0) adaptor.AddChild(root_0, gn.Tree);
 				DebugLocation(71, 23);
-				char_literal6=(CommonToken)Match(input,12,Follow._12_in_nullable264); if (state.failed) return retval;
+				char_literal6=(CommonToken)Match(input,14,Follow._14_in_nullable264); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				char_literal6_tree = (CommonTree)adaptor.Create(char_literal6);
 				adaptor.AddChild(root_0, char_literal6_tree);
@@ -825,7 +827,7 @@ namespace  CSharpSyntax.NameParsing
 				if (state.failed) return retval;
 				if (state.backtracking == 0) adaptor.AddChild(root_0, n.Tree);
 				DebugLocation(81, 14);
-				char_literal7=(CommonToken)Match(input,10,Follow._10_in_generic_name303); if (state.failed) return retval;
+				char_literal7=(CommonToken)Match(input,12,Follow._12_in_generic_name303); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				char_literal7_tree = (CommonTree)adaptor.Create(char_literal7);
 				adaptor.AddChild(root_0, char_literal7_tree);
@@ -837,7 +839,7 @@ namespace  CSharpSyntax.NameParsing
 				if (state.failed) return retval;
 				if (state.backtracking == 0) adaptor.AddChild(root_0, bga.Tree);
 				DebugLocation(81, 46);
-				char_literal8=(CommonToken)Match(input,11,Follow._11_in_generic_name309); if (state.failed) return retval;
+				char_literal8=(CommonToken)Match(input,13,Follow._13_in_generic_name309); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				char_literal8_tree = (CommonTree)adaptor.Create(char_literal8);
 				adaptor.AddChild(root_0, char_literal8_tree);
@@ -871,7 +873,7 @@ namespace  CSharpSyntax.NameParsing
 				if (state.failed) return retval;
 				if (state.backtracking == 0) adaptor.AddChild(root_0, n.Tree);
 				DebugLocation(90, 14);
-				char_literal9=(CommonToken)Match(input,10,Follow._10_in_generic_name323); if (state.failed) return retval;
+				char_literal9=(CommonToken)Match(input,12,Follow._12_in_generic_name323); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				char_literal9_tree = (CommonTree)adaptor.Create(char_literal9);
 				adaptor.AddChild(root_0, char_literal9_tree);
@@ -883,7 +885,7 @@ namespace  CSharpSyntax.NameParsing
 				if (state.failed) return retval;
 				if (state.backtracking == 0) adaptor.AddChild(root_0, cl.Tree);
 				DebugLocation(90, 32);
-				char_literal10=(CommonToken)Match(input,11,Follow._11_in_generic_name329); if (state.failed) return retval;
+				char_literal10=(CommonToken)Match(input,13,Follow._13_in_generic_name329); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				char_literal10_tree = (CommonTree)adaptor.Create(char_literal10);
 				adaptor.AddChild(root_0, char_literal10_tree);
@@ -1021,7 +1023,7 @@ namespace  CSharpSyntax.NameParsing
 				if (state.failed) return retval;
 				if (state.backtracking == 0) adaptor.AddChild(root_0, an.Tree);
 				DebugLocation(108, 19);
-				char_literal11=(CommonToken)Match(input,7,Follow._7_in_bound_generic_arguments368); if (state.failed) return retval;
+				char_literal11=(CommonToken)Match(input,9,Follow._9_in_bound_generic_arguments368); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				char_literal11_tree = (CommonTree)adaptor.Create(char_literal11);
 				adaptor.AddChild(root_0, char_literal11_tree);
@@ -1139,11 +1141,11 @@ namespace  CSharpSyntax.NameParsing
 			try { DebugEnterDecision(6, false);
 			int LA6_1 = input.LA(1);
 
-			if ((LA6_1==11||LA6_1==14))
+			if ((LA6_1==13||LA6_1==16))
 			{
 				alt6 = 1;
 			}
-			else if ((LA6_1==7))
+			else if ((LA6_1==9))
 			{
 				alt6 = 2;
 			}
@@ -1178,7 +1180,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(125, 7);
-				char_literal12=(CommonToken)Match(input,7,Follow._7_in_comma_list415); if (state.failed) return retval;
+				char_literal12=(CommonToken)Match(input,9,Follow._9_in_comma_list415); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				char_literal12_tree = (CommonTree)adaptor.Create(char_literal12);
 				adaptor.AddChild(root_0, char_literal12_tree);
@@ -1264,7 +1266,7 @@ namespace  CSharpSyntax.NameParsing
 			try { DebugEnterDecision(7, false);
 			int LA7_1 = input.LA(1);
 
-			if (((LA7_1>=15 && LA7_1<=30)))
+			if (((LA7_1>=17 && LA7_1<=32)))
 			{
 				alt7 = 1;
 			}
@@ -1395,11 +1397,11 @@ namespace  CSharpSyntax.NameParsing
 			{
 				int LA8_2 = input.LA(2);
 
-				if ((LA8_2==9))
+				if ((LA8_2==11))
 				{
 					alt8 = 1;
 				}
-				else if ((LA8_2==EOF||(LA8_2>=7 && LA8_2<=8)||(LA8_2>=10 && LA8_2<=13)))
+				else if ((LA8_2==EOF||(LA8_2>=9 && LA8_2<=10)||(LA8_2>=12 && LA8_2<=15)))
 				{
 					alt8 = 2;
 				}
@@ -1434,7 +1436,7 @@ namespace  CSharpSyntax.NameParsing
 				if (state.failed) return retval;
 				if (state.backtracking == 0) adaptor.AddChild(root_0, i.Tree);
 				DebugLocation(134, 20);
-				string_literal13=(CommonToken)Match(input,9,Follow._9_in_alias_qualified483); if (state.failed) return retval;
+				string_literal13=(CommonToken)Match(input,11,Follow._11_in_alias_qualified483); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal13_tree = (CommonTree)adaptor.Create(string_literal13);
 				adaptor.AddChild(root_0, string_literal13_tree);
@@ -1546,11 +1548,11 @@ namespace  CSharpSyntax.NameParsing
 			{
 				int LA9_2 = input.LA(2);
 
-				if ((LA9_2==EOF||LA9_2==7||(LA9_2>=10 && LA9_2<=13)))
+				if ((LA9_2==EOF||LA9_2==9||(LA9_2>=12 && LA9_2<=15)))
 				{
 					alt9 = 1;
 				}
-				else if ((LA9_2==8))
+				else if ((LA9_2==10))
 				{
 					alt9 = 2;
 				}
@@ -1605,7 +1607,7 @@ namespace  CSharpSyntax.NameParsing
 				if (state.failed) return retval;
 				if (state.backtracking == 0) adaptor.AddChild(root_0, i.Tree);
 				DebugLocation(140, 20);
-				char_literal14=(CommonToken)Match(input,8,Follow._8_in_qualified538); if (state.failed) return retval;
+				char_literal14=(CommonToken)Match(input,10,Follow._10_in_qualified538); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				char_literal14_tree = (CommonTree)adaptor.Create(char_literal14);
 				adaptor.AddChild(root_0, char_literal14_tree);
@@ -1805,82 +1807,82 @@ namespace  CSharpSyntax.NameParsing
 			try { DebugEnterDecision(10, false);
 			switch (input.LA(1))
 			{
-			case 16:
+			case 18:
 				{
 				alt10 = 1;
 				}
 				break;
-			case 24:
+			case 26:
 				{
 				alt10 = 2;
 				}
 				break;
-			case 25:
+			case 27:
 				{
 				alt10 = 3;
 				}
 				break;
-			case 29:
+			case 31:
 				{
 				alt10 = 4;
 				}
 				break;
-			case 21:
+			case 23:
 				{
 				alt10 = 5;
 				}
 				break;
-			case 27:
+			case 29:
 				{
 				alt10 = 6;
 				}
 				break;
-			case 22:
+			case 24:
 				{
 				alt10 = 7;
 				}
 				break;
-			case 28:
+			case 30:
 				{
 				alt10 = 8;
 				}
 				break;
-			case 15:
+			case 17:
 				{
 				alt10 = 9;
 				}
 				break;
-			case 19:
+			case 21:
 				{
 				alt10 = 10;
 				}
 				break;
-			case 20:
+			case 22:
 				{
 				alt10 = 11;
 				}
 				break;
-			case 18:
+			case 20:
 				{
 				alt10 = 12;
 				}
 				break;
-			case 26:
+			case 28:
 				{
 				alt10 = 13;
 				}
 				break;
-			case 17:
+			case 19:
 				{
 				alt10 = 14;
 				}
 				break;
-			case 30:
+			case 32:
 				{
 				alt10 = 15;
 				}
 				break;
-			case 23:
+			case 25:
 				{
 				alt10 = 16;
 				}
@@ -1904,7 +1906,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(153, 7);
-				string_literal15=(CommonToken)Match(input,16,Follow._16_in_predefined_type590); if (state.failed) return retval;
+				string_literal15=(CommonToken)Match(input,18,Follow._18_in_predefined_type590); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal15_tree = (CommonTree)adaptor.Create(string_literal15);
 				adaptor.AddChild(root_0, string_literal15_tree);
@@ -1924,7 +1926,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(154, 7);
-				string_literal16=(CommonToken)Match(input,24,Follow._24_in_predefined_type600); if (state.failed) return retval;
+				string_literal16=(CommonToken)Match(input,26,Follow._26_in_predefined_type600); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal16_tree = (CommonTree)adaptor.Create(string_literal16);
 				adaptor.AddChild(root_0, string_literal16_tree);
@@ -1944,7 +1946,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(155, 7);
-				string_literal17=(CommonToken)Match(input,25,Follow._25_in_predefined_type610); if (state.failed) return retval;
+				string_literal17=(CommonToken)Match(input,27,Follow._27_in_predefined_type610); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal17_tree = (CommonTree)adaptor.Create(string_literal17);
 				adaptor.AddChild(root_0, string_literal17_tree);
@@ -1964,7 +1966,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(156, 7);
-				string_literal18=(CommonToken)Match(input,29,Follow._29_in_predefined_type620); if (state.failed) return retval;
+				string_literal18=(CommonToken)Match(input,31,Follow._31_in_predefined_type620); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal18_tree = (CommonTree)adaptor.Create(string_literal18);
 				adaptor.AddChild(root_0, string_literal18_tree);
@@ -1984,7 +1986,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(157, 7);
-				string_literal19=(CommonToken)Match(input,21,Follow._21_in_predefined_type630); if (state.failed) return retval;
+				string_literal19=(CommonToken)Match(input,23,Follow._23_in_predefined_type630); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal19_tree = (CommonTree)adaptor.Create(string_literal19);
 				adaptor.AddChild(root_0, string_literal19_tree);
@@ -2004,7 +2006,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(158, 7);
-				string_literal20=(CommonToken)Match(input,27,Follow._27_in_predefined_type640); if (state.failed) return retval;
+				string_literal20=(CommonToken)Match(input,29,Follow._29_in_predefined_type640); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal20_tree = (CommonTree)adaptor.Create(string_literal20);
 				adaptor.AddChild(root_0, string_literal20_tree);
@@ -2024,7 +2026,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(159, 7);
-				string_literal21=(CommonToken)Match(input,22,Follow._22_in_predefined_type650); if (state.failed) return retval;
+				string_literal21=(CommonToken)Match(input,24,Follow._24_in_predefined_type650); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal21_tree = (CommonTree)adaptor.Create(string_literal21);
 				adaptor.AddChild(root_0, string_literal21_tree);
@@ -2044,7 +2046,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(160, 7);
-				string_literal22=(CommonToken)Match(input,28,Follow._28_in_predefined_type660); if (state.failed) return retval;
+				string_literal22=(CommonToken)Match(input,30,Follow._30_in_predefined_type660); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal22_tree = (CommonTree)adaptor.Create(string_literal22);
 				adaptor.AddChild(root_0, string_literal22_tree);
@@ -2064,7 +2066,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(161, 7);
-				string_literal23=(CommonToken)Match(input,15,Follow._15_in_predefined_type670); if (state.failed) return retval;
+				string_literal23=(CommonToken)Match(input,17,Follow._17_in_predefined_type670); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal23_tree = (CommonTree)adaptor.Create(string_literal23);
 				adaptor.AddChild(root_0, string_literal23_tree);
@@ -2084,7 +2086,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(162, 7);
-				string_literal24=(CommonToken)Match(input,19,Follow._19_in_predefined_type680); if (state.failed) return retval;
+				string_literal24=(CommonToken)Match(input,21,Follow._21_in_predefined_type680); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal24_tree = (CommonTree)adaptor.Create(string_literal24);
 				adaptor.AddChild(root_0, string_literal24_tree);
@@ -2104,7 +2106,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(163, 7);
-				string_literal25=(CommonToken)Match(input,20,Follow._20_in_predefined_type690); if (state.failed) return retval;
+				string_literal25=(CommonToken)Match(input,22,Follow._22_in_predefined_type690); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal25_tree = (CommonTree)adaptor.Create(string_literal25);
 				adaptor.AddChild(root_0, string_literal25_tree);
@@ -2124,7 +2126,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(164, 7);
-				string_literal26=(CommonToken)Match(input,18,Follow._18_in_predefined_type700); if (state.failed) return retval;
+				string_literal26=(CommonToken)Match(input,20,Follow._20_in_predefined_type700); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal26_tree = (CommonTree)adaptor.Create(string_literal26);
 				adaptor.AddChild(root_0, string_literal26_tree);
@@ -2144,7 +2146,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(165, 7);
-				string_literal27=(CommonToken)Match(input,26,Follow._26_in_predefined_type710); if (state.failed) return retval;
+				string_literal27=(CommonToken)Match(input,28,Follow._28_in_predefined_type710); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal27_tree = (CommonTree)adaptor.Create(string_literal27);
 				adaptor.AddChild(root_0, string_literal27_tree);
@@ -2164,7 +2166,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(166, 7);
-				string_literal28=(CommonToken)Match(input,17,Follow._17_in_predefined_type720); if (state.failed) return retval;
+				string_literal28=(CommonToken)Match(input,19,Follow._19_in_predefined_type720); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal28_tree = (CommonTree)adaptor.Create(string_literal28);
 				adaptor.AddChild(root_0, string_literal28_tree);
@@ -2184,7 +2186,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(167, 7);
-				string_literal29=(CommonToken)Match(input,30,Follow._30_in_predefined_type730); if (state.failed) return retval;
+				string_literal29=(CommonToken)Match(input,32,Follow._32_in_predefined_type730); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal29_tree = (CommonTree)adaptor.Create(string_literal29);
 				adaptor.AddChild(root_0, string_literal29_tree);
@@ -2204,7 +2206,7 @@ namespace  CSharpSyntax.NameParsing
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(168, 7);
-				string_literal30=(CommonToken)Match(input,23,Follow._23_in_predefined_type740); if (state.failed) return retval;
+				string_literal30=(CommonToken)Match(input,25,Follow._25_in_predefined_type740); if (state.failed) return retval;
 				if (state.backtracking == 0) {
 				string_literal30_tree = (CommonTree)adaptor.Create(string_literal30);
 				adaptor.AddChild(root_0, string_literal30_tree);
@@ -2392,14 +2394,14 @@ namespace  CSharpSyntax.NameParsing
 			// ..\\..\\NameParsing\\CSharpNames.g:58:7: '[' cl= comma_list ']' ar= array_ranks
 			{
 			DebugLocation(58, 7);
-			Match(input,13,Follow._13_in_synpred2_CSharpNames211); if (state.failed) return;
+			Match(input,15,Follow._15_in_synpred2_CSharpNames211); if (state.failed) return;
 			DebugLocation(58, 13);
 			PushFollow(Follow._comma_list_in_synpred2_CSharpNames215);
 			cl=comma_list();
 			PopFollow();
 			if (state.failed) return;
 			DebugLocation(58, 25);
-			Match(input,14,Follow._14_in_synpred2_CSharpNames217); if (state.failed) return;
+			Match(input,16,Follow._16_in_synpred2_CSharpNames217); if (state.failed) return;
 			DebugLocation(58, 31);
 			PushFollow(Follow._array_ranks_in_synpred2_CSharpNames221);
 			ar=array_ranks();
@@ -2441,7 +2443,7 @@ namespace  CSharpSyntax.NameParsing
 			PopFollow();
 			if (state.failed) return;
 			DebugLocation(71, 23);
-			Match(input,12,Follow._12_in_synpred3_CSharpNames264); if (state.failed) return;
+			Match(input,14,Follow._14_in_synpred3_CSharpNames264); if (state.failed) return;
 
 			}
 
@@ -2479,14 +2481,14 @@ namespace  CSharpSyntax.NameParsing
 			PopFollow();
 			if (state.failed) return;
 			DebugLocation(81, 14);
-			Match(input,10,Follow._10_in_synpred4_CSharpNames303); if (state.failed) return;
+			Match(input,12,Follow._12_in_synpred4_CSharpNames303); if (state.failed) return;
 			DebugLocation(81, 21);
 			PushFollow(Follow._bound_generic_arguments_in_synpred4_CSharpNames307);
 			bga=bound_generic_arguments();
 			PopFollow();
 			if (state.failed) return;
 			DebugLocation(81, 46);
-			Match(input,11,Follow._11_in_synpred4_CSharpNames309); if (state.failed) return;
+			Match(input,13,Follow._13_in_synpred4_CSharpNames309); if (state.failed) return;
 
 			}
 
@@ -2524,14 +2526,14 @@ namespace  CSharpSyntax.NameParsing
 			PopFollow();
 			if (state.failed) return;
 			DebugLocation(90, 14);
-			Match(input,10,Follow._10_in_synpred5_CSharpNames323); if (state.failed) return;
+			Match(input,12,Follow._12_in_synpred5_CSharpNames323); if (state.failed) return;
 			DebugLocation(90, 20);
 			PushFollow(Follow._comma_list_in_synpred5_CSharpNames327);
 			cl=comma_list();
 			PopFollow();
 			if (state.failed) return;
 			DebugLocation(90, 32);
-			Match(input,11,Follow._11_in_synpred5_CSharpNames329); if (state.failed) return;
+			Match(input,13,Follow._13_in_synpred5_CSharpNames329); if (state.failed) return;
 
 			}
 
@@ -2569,7 +2571,7 @@ namespace  CSharpSyntax.NameParsing
 			PopFollow();
 			if (state.failed) return;
 			DebugLocation(108, 19);
-			Match(input,7,Follow._7_in_synpred6_CSharpNames368); if (state.failed) return;
+			Match(input,9,Follow._9_in_synpred6_CSharpNames368); if (state.failed) return;
 			DebugLocation(108, 26);
 			PushFollow(Follow._bound_generic_arguments_in_synpred6_CSharpNames372);
 			bga=bound_generic_arguments();
@@ -2636,12 +2638,12 @@ namespace  CSharpSyntax.NameParsing
 		private const string DFA1_eofS =
 			"\x1\xFFFF\x11\x15\x68\xFFFF";
 		private const string DFA1_minS =
-			"\x1\x4\x11\x7\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF"+
+			"\x1\x4\x11\x9\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF"+
 			"\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4"+
 			"\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2"+
 			"\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x4\x0\x4\xFFFF";
 		private const string DFA1_maxS =
-			"\x1\x1E\x11\xD\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4"+
+			"\x1\x20\x11\xF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4"+
 			"\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2"+
 			"\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF"+
 			"\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x2\x0\x4\xFFFF\x4\x0\x4\xFFFF";
@@ -2656,7 +2658,7 @@ namespace  CSharpSyntax.NameParsing
 			"\x1F\x4\xFFFF\x1\x20\x1\x21\x1\x22\x1\x23\x4\xFFFF}>";
 		private static readonly string[] DFA1_transitionS =
 			{
-				"\x1\x11\xA\xFFFF\x1\x9\x1\x1\x1\xE\x1\xC\x1\xA\x1\xB\x1\x5\x1\x7\x1"+
+				"\x1\x11\xC\xFFFF\x1\x9\x1\x1\x1\xE\x1\xC\x1\xA\x1\xB\x1\x5\x1\x7\x1"+
 				"\x10\x1\x2\x1\x3\x1\xD\x1\x6\x1\x8\x1\x4\x1\xF",
 				"\x1\x15\x2\xFFFF\x1\x12\x1\x15\x1\x13\x1\x14",
 				"\x1\x15\x2\xFFFF\x1\x18\x1\x15\x1\x19\x1\x14",
@@ -3210,12 +3212,12 @@ namespace  CSharpSyntax.NameParsing
 		private const string DFA3_eofS =
 			"\x1\xFFFF\x11\x14\x68\xFFFF";
 		private const string DFA3_minS =
-			"\x1\x4\x11\x7\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF"+
+			"\x1\x4\x11\x9\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF"+
 			"\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5"+
 			"\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1"+
 			"\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x3\x0\x5\xFFFF";
 		private const string DFA3_maxS =
-			"\x1\x1E\x11\xD\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5"+
+			"\x1\x20\x11\xF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5"+
 			"\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1"+
 			"\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF"+
 			"\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x3\x0\x5\xFFFF";
@@ -3228,7 +3230,7 @@ namespace  CSharpSyntax.NameParsing
 			"\xD\x5\xFFFF\x1\xE\x5\xFFFF\x1\xF\x5\xFFFF\x1\x10\x1\x11\x1\x12\x5\xFFFF}>";
 		private static readonly string[] DFA3_transitionS =
 			{
-				"\x1\x11\xA\xFFFF\x1\x9\x1\x1\x1\xE\x1\xC\x1\xA\x1\xB\x1\x5\x1\x7\x1"+
+				"\x1\x11\xC\xFFFF\x1\x9\x1\x1\x1\xE\x1\xC\x1\xA\x1\xB\x1\x5\x1\x7\x1"+
 				"\x10\x1\x2\x1\x3\x1\xD\x1\x6\x1\x8\x1\x4\x1\xF",
 				"\x1\x14\x2\xFFFF\x1\x12\x1\x14\x1\x13\x1\x14",
 				"\x1\x14\x2\xFFFF\x1\x18\x1\x14\x1\x13\x1\x14",
@@ -3612,12 +3614,12 @@ namespace  CSharpSyntax.NameParsing
 		private const string DFA4_eofS =
 			"\x1\xFFFF\x11\x13\x6A\xFFFF";
 		private const string DFA4_minS =
-			"\x1\x4\x11\x7\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF"+
+			"\x1\x4\x11\x9\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF"+
 			"\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5"+
 			"\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1"+
 			"\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x3\x0\x7\xFFFF";
 		private const string DFA4_maxS =
-			"\x1\x1E\x11\xD\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5"+
+			"\x1\x20\x11\xF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5"+
 			"\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1"+
 			"\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF"+
 			"\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x1\x0\x5\xFFFF\x3\x0\x7\xFFFF";
@@ -3630,7 +3632,7 @@ namespace  CSharpSyntax.NameParsing
 			"\xD\x5\xFFFF\x1\xE\x5\xFFFF\x1\xF\x5\xFFFF\x1\x10\x1\x11\x1\x12\x7\xFFFF}>";
 		private static readonly string[] DFA4_transitionS =
 			{
-				"\x1\x11\xA\xFFFF\x1\x9\x1\x1\x1\xE\x1\xC\x1\xA\x1\xB\x1\x5\x1\x7\x1"+
+				"\x1\x11\xC\xFFFF\x1\x9\x1\x1\x1\xE\x1\xC\x1\xA\x1\xB\x1\x5\x1\x7\x1"+
 				"\x10\x1\x2\x1\x3\x1\xD\x1\x6\x1\x8\x1\x4\x1\xF",
 				"\x1\x13\x2\xFFFF\x1\x12\x3\x13",
 				"\x1\x13\x2\xFFFF\x1\x18\x3\x13",
@@ -4020,12 +4022,12 @@ namespace  CSharpSyntax.NameParsing
 		private const string DFA5_eofS =
 			"\x1\xFFFF\x11\x16\x68\xFFFF";
 		private const string DFA5_minS =
-			"\x1\x4\x11\x7\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF"+
+			"\x1\x4\x11\x9\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF"+
 			"\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3"+
 			"\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3"+
 			"\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x5\x0\x3\xFFFF";
 		private const string DFA5_maxS =
-			"\x1\x1E\x11\xD\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3"+
+			"\x1\x20\x11\xF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3"+
 			"\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3"+
 			"\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF"+
 			"\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x3\x0\x3\xFFFF\x5\x0\x3\xFFFF";
@@ -4042,7 +4044,7 @@ namespace  CSharpSyntax.NameParsing
 			"\x1\x32\x1\x33\x1\x34\x3\xFFFF}>";
 		private static readonly string[] DFA5_transitionS =
 			{
-				"\x1\x11\xA\xFFFF\x1\x9\x1\x1\x1\xE\x1\xC\x1\xA\x1\xB\x1\x5\x1\x7\x1"+
+				"\x1\x11\xC\xFFFF\x1\x9\x1\x1\x1\xE\x1\xC\x1\xA\x1\xB\x1\x5\x1\x7\x1"+
 				"\x10\x1\x2\x1\x3\x1\xD\x1\x6\x1\x8\x1\x4\x1\xF",
 				"\x1\x15\x2\xFFFF\x1\x12\x1\x16\x1\x13\x1\x14",
 				"\x1\x15\x2\xFFFF\x1\x18\x1\x16\x1\x19\x1\x1A",
@@ -4768,80 +4770,80 @@ namespace  CSharpSyntax.NameParsing
 		public static readonly BitSet _any_name_in_prog120 = new BitSet(new ulong[]{0x0UL});
 		public static readonly BitSet _EOF_in_prog124 = new BitSet(new ulong[]{0x2UL});
 		public static readonly BitSet _array_in_any_name147 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _nullable_in_array172 = new BitSet(new ulong[]{0x2000UL});
+		public static readonly BitSet _nullable_in_array172 = new BitSet(new ulong[]{0x8000UL});
 		public static readonly BitSet _array_ranks_in_array176 = new BitSet(new ulong[]{0x2UL});
 		public static readonly BitSet _nullable_in_array188 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _13_in_array_ranks211 = new BitSet(new ulong[]{0x4080UL});
-		public static readonly BitSet _comma_list_in_array_ranks215 = new BitSet(new ulong[]{0x4000UL});
-		public static readonly BitSet _14_in_array_ranks217 = new BitSet(new ulong[]{0x2000UL});
+		public static readonly BitSet _15_in_array_ranks211 = new BitSet(new ulong[]{0x10200UL});
+		public static readonly BitSet _comma_list_in_array_ranks215 = new BitSet(new ulong[]{0x10000UL});
+		public static readonly BitSet _16_in_array_ranks217 = new BitSet(new ulong[]{0x8000UL});
 		public static readonly BitSet _array_ranks_in_array_ranks221 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _13_in_array_ranks231 = new BitSet(new ulong[]{0x4080UL});
-		public static readonly BitSet _comma_list_in_array_ranks235 = new BitSet(new ulong[]{0x4000UL});
-		public static readonly BitSet _14_in_array_ranks237 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _generic_name_in_nullable262 = new BitSet(new ulong[]{0x1000UL});
-		public static readonly BitSet _12_in_nullable264 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _15_in_array_ranks231 = new BitSet(new ulong[]{0x10200UL});
+		public static readonly BitSet _comma_list_in_array_ranks235 = new BitSet(new ulong[]{0x10000UL});
+		public static readonly BitSet _16_in_array_ranks237 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _generic_name_in_nullable262 = new BitSet(new ulong[]{0x4000UL});
+		public static readonly BitSet _14_in_nullable264 = new BitSet(new ulong[]{0x2UL});
 		public static readonly BitSet _generic_name_in_nullable276 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _name_in_generic_name301 = new BitSet(new ulong[]{0x400UL});
-		public static readonly BitSet _10_in_generic_name303 = new BitSet(new ulong[]{0x7FFF8010UL});
-		public static readonly BitSet _bound_generic_arguments_in_generic_name307 = new BitSet(new ulong[]{0x800UL});
-		public static readonly BitSet _11_in_generic_name309 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _name_in_generic_name321 = new BitSet(new ulong[]{0x400UL});
-		public static readonly BitSet _10_in_generic_name323 = new BitSet(new ulong[]{0x880UL});
-		public static readonly BitSet _comma_list_in_generic_name327 = new BitSet(new ulong[]{0x800UL});
-		public static readonly BitSet _11_in_generic_name329 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _name_in_generic_name301 = new BitSet(new ulong[]{0x1000UL});
+		public static readonly BitSet _12_in_generic_name303 = new BitSet(new ulong[]{0x1FFFE0010UL});
+		public static readonly BitSet _bound_generic_arguments_in_generic_name307 = new BitSet(new ulong[]{0x2000UL});
+		public static readonly BitSet _13_in_generic_name309 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _name_in_generic_name321 = new BitSet(new ulong[]{0x1000UL});
+		public static readonly BitSet _12_in_generic_name323 = new BitSet(new ulong[]{0x2200UL});
+		public static readonly BitSet _comma_list_in_generic_name327 = new BitSet(new ulong[]{0x2000UL});
+		public static readonly BitSet _13_in_generic_name329 = new BitSet(new ulong[]{0x2UL});
 		public static readonly BitSet _name_in_generic_name341 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _any_name_in_bound_generic_arguments366 = new BitSet(new ulong[]{0x80UL});
-		public static readonly BitSet _7_in_bound_generic_arguments368 = new BitSet(new ulong[]{0x7FFF8010UL});
+		public static readonly BitSet _any_name_in_bound_generic_arguments366 = new BitSet(new ulong[]{0x200UL});
+		public static readonly BitSet _9_in_bound_generic_arguments368 = new BitSet(new ulong[]{0x1FFFE0010UL});
 		public static readonly BitSet _bound_generic_arguments_in_bound_generic_arguments372 = new BitSet(new ulong[]{0x2UL});
 		public static readonly BitSet _any_name_in_bound_generic_arguments384 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _7_in_comma_list415 = new BitSet(new ulong[]{0x80UL});
+		public static readonly BitSet _9_in_comma_list415 = new BitSet(new ulong[]{0x200UL});
 		public static readonly BitSet _comma_list_in_comma_list419 = new BitSet(new ulong[]{0x2UL});
 		public static readonly BitSet _predefined_in_name444 = new BitSet(new ulong[]{0x2UL});
 		public static readonly BitSet _alias_qualified_in_name456 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _identifier_in_alias_qualified481 = new BitSet(new ulong[]{0x200UL});
-		public static readonly BitSet _9_in_alias_qualified483 = new BitSet(new ulong[]{0x10UL});
+		public static readonly BitSet _identifier_in_alias_qualified481 = new BitSet(new ulong[]{0x800UL});
+		public static readonly BitSet _11_in_alias_qualified483 = new BitSet(new ulong[]{0x10UL});
 		public static readonly BitSet _qualified_in_alias_qualified487 = new BitSet(new ulong[]{0x2UL});
 		public static readonly BitSet _qualified_in_alias_qualified499 = new BitSet(new ulong[]{0x2UL});
 		public static readonly BitSet _identifier_in_qualified524 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _identifier_in_qualified536 = new BitSet(new ulong[]{0x100UL});
-		public static readonly BitSet _8_in_qualified538 = new BitSet(new ulong[]{0x10UL});
+		public static readonly BitSet _identifier_in_qualified536 = new BitSet(new ulong[]{0x400UL});
+		public static readonly BitSet _10_in_qualified538 = new BitSet(new ulong[]{0x10UL});
 		public static readonly BitSet _qualified_in_qualified542 = new BitSet(new ulong[]{0x2UL});
 		public static readonly BitSet _predefined_type_in_predefined567 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _16_in_predefined_type590 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _24_in_predefined_type600 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _25_in_predefined_type610 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _29_in_predefined_type620 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _21_in_predefined_type630 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _27_in_predefined_type640 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _22_in_predefined_type650 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _28_in_predefined_type660 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _15_in_predefined_type670 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _19_in_predefined_type680 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _20_in_predefined_type690 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _18_in_predefined_type700 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _26_in_predefined_type710 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _17_in_predefined_type720 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _30_in_predefined_type730 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _23_in_predefined_type740 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _18_in_predefined_type590 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _26_in_predefined_type600 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _27_in_predefined_type610 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _31_in_predefined_type620 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _23_in_predefined_type630 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _29_in_predefined_type640 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _24_in_predefined_type650 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _30_in_predefined_type660 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _17_in_predefined_type670 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _21_in_predefined_type680 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _22_in_predefined_type690 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _20_in_predefined_type700 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _28_in_predefined_type710 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _19_in_predefined_type720 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _32_in_predefined_type730 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _25_in_predefined_type740 = new BitSet(new ulong[]{0x2UL});
 		public static readonly BitSet _IDENTIFIER_in_identifier763 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _nullable_in_synpred1_CSharpNames172 = new BitSet(new ulong[]{0x2000UL});
+		public static readonly BitSet _nullable_in_synpred1_CSharpNames172 = new BitSet(new ulong[]{0x8000UL});
 		public static readonly BitSet _array_ranks_in_synpred1_CSharpNames176 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _13_in_synpred2_CSharpNames211 = new BitSet(new ulong[]{0x4080UL});
-		public static readonly BitSet _comma_list_in_synpred2_CSharpNames215 = new BitSet(new ulong[]{0x4000UL});
-		public static readonly BitSet _14_in_synpred2_CSharpNames217 = new BitSet(new ulong[]{0x2000UL});
+		public static readonly BitSet _15_in_synpred2_CSharpNames211 = new BitSet(new ulong[]{0x10200UL});
+		public static readonly BitSet _comma_list_in_synpred2_CSharpNames215 = new BitSet(new ulong[]{0x10000UL});
+		public static readonly BitSet _16_in_synpred2_CSharpNames217 = new BitSet(new ulong[]{0x8000UL});
 		public static readonly BitSet _array_ranks_in_synpred2_CSharpNames221 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _generic_name_in_synpred3_CSharpNames262 = new BitSet(new ulong[]{0x1000UL});
-		public static readonly BitSet _12_in_synpred3_CSharpNames264 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _name_in_synpred4_CSharpNames301 = new BitSet(new ulong[]{0x400UL});
-		public static readonly BitSet _10_in_synpred4_CSharpNames303 = new BitSet(new ulong[]{0x7FFF8010UL});
-		public static readonly BitSet _bound_generic_arguments_in_synpred4_CSharpNames307 = new BitSet(new ulong[]{0x800UL});
-		public static readonly BitSet _11_in_synpred4_CSharpNames309 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _name_in_synpred5_CSharpNames321 = new BitSet(new ulong[]{0x400UL});
-		public static readonly BitSet _10_in_synpred5_CSharpNames323 = new BitSet(new ulong[]{0x880UL});
-		public static readonly BitSet _comma_list_in_synpred5_CSharpNames327 = new BitSet(new ulong[]{0x800UL});
-		public static readonly BitSet _11_in_synpred5_CSharpNames329 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _any_name_in_synpred6_CSharpNames366 = new BitSet(new ulong[]{0x80UL});
-		public static readonly BitSet _7_in_synpred6_CSharpNames368 = new BitSet(new ulong[]{0x7FFF8010UL});
+		public static readonly BitSet _generic_name_in_synpred3_CSharpNames262 = new BitSet(new ulong[]{0x4000UL});
+		public static readonly BitSet _14_in_synpred3_CSharpNames264 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _name_in_synpred4_CSharpNames301 = new BitSet(new ulong[]{0x1000UL});
+		public static readonly BitSet _12_in_synpred4_CSharpNames303 = new BitSet(new ulong[]{0x1FFFE0010UL});
+		public static readonly BitSet _bound_generic_arguments_in_synpred4_CSharpNames307 = new BitSet(new ulong[]{0x2000UL});
+		public static readonly BitSet _13_in_synpred4_CSharpNames309 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _name_in_synpred5_CSharpNames321 = new BitSet(new ulong[]{0x1000UL});
+		public static readonly BitSet _12_in_synpred5_CSharpNames323 = new BitSet(new ulong[]{0x2200UL});
+		public static readonly BitSet _comma_list_in_synpred5_CSharpNames327 = new BitSet(new ulong[]{0x2000UL});
+		public static readonly BitSet _13_in_synpred5_CSharpNames329 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _any_name_in_synpred6_CSharpNames366 = new BitSet(new ulong[]{0x200UL});
+		public static readonly BitSet _9_in_synpred6_CSharpNames368 = new BitSet(new ulong[]{0x1FFFE0010UL});
 		public static readonly BitSet _bound_generic_arguments_in_synpred6_CSharpNames372 = new BitSet(new ulong[]{0x2UL});
 	}
 	#endregion Follow sets

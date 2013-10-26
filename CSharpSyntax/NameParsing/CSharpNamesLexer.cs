@@ -21,5 +21,41 @@ namespace CSharpSyntax.NameParsing
         {
             throw e;
         }
+
+        private void ConsumeIdentifierUnicodeStart()
+        {
+            int c = input.LA(1);
+
+            if (!IsIdentifierStartUnicode(c))
+                throw new NoViableAltException();
+
+            MatchAny();
+
+            do
+            {
+                c = input.LA(1);
+
+                if (
+                    (c >= '0' && c <= '9') ||
+                    (c >= 'A' && c <= 'Z') ||
+                    (c >= 'a' && c <= 'z') ||
+                    c == '_' ||
+                    IsIdentifierPartUnicode(c))
+                    mIDENTIFIER_PART();
+                else
+                    return;
+            }
+            while (true);
+        }
+
+        private bool IsIdentifierPartUnicode(int c)
+        {
+            return Char.IsLetterOrDigit((char)c);
+        }
+
+        private bool IsIdentifierStartUnicode(int c)
+        {
+            return Char.IsLetter((char)c);
+        }
     }
 }

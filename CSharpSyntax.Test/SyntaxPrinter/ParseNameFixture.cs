@@ -11,6 +11,8 @@ namespace CSharpSyntax.Test.SyntaxPrinter
     public class ParseNameFixture : TestBase
     {
         [TestCase("Class")]
+        [TestCase("経済協力開発機構")]
+        [TestCase("Sébastien")]
         public void Identifier(string code)
         {
             TestAndCompare(code, code);

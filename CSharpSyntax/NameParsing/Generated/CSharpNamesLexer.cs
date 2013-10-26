@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// $ANTLR 3.4.1.9004 ..\\..\\NameParsing\\CSharpNames.g 2013-06-02 10:53:41
+// $ANTLR 3.4.1.9004 ..\\..\\NameParsing\\CSharpNames.g 2013-10-26 10:43:17
 
 // The variable 'variable' is assigned but its value is never used.
 #pragma warning disable 219
@@ -32,10 +32,10 @@ namespace  CSharpSyntax.NameParsing
 {
 	public const int EOF=-1;
 	public const int IDENTIFIER=4;
-	public const int LETTER=5;
-	public const int WS=6;
-	public const int T__7=7;
-	public const int T__8=8;
+	public const int IDENTIFIER_NAME_ASCII_START=5;
+	public const int IDENTIFIER_PART=6;
+	public const int IDENTIFIER_START_ASCII=7;
+	public const int WS=8;
 	public const int T__9=9;
 	public const int T__10=10;
 	public const int T__11=11;
@@ -58,6 +58,8 @@ namespace  CSharpSyntax.NameParsing
 	public const int T__28=28;
 	public const int T__29=29;
 	public const int T__30=30;
+	public const int T__31=31;
+	public const int T__32=32;
 
     // delegates
     // delegators
@@ -85,19 +87,19 @@ namespace  CSharpSyntax.NameParsing
 	partial void EnterRule(string ruleName, int ruleIndex);
 	partial void LeaveRule(string ruleName, int ruleIndex);
 
-	partial void EnterRule_T__7();
-	partial void LeaveRule_T__7();
+	partial void EnterRule_T__9();
+	partial void LeaveRule_T__9();
 
-	// $ANTLR start "T__7"
-	[GrammarRule("T__7")]
-	private void mT__7()
+	// $ANTLR start "T__9"
+	[GrammarRule("T__9")]
+	private void mT__9()
 	{
-		EnterRule_T__7();
-		EnterRule("T__7", 1);
-		TraceIn("T__7", 1);
+		EnterRule_T__9();
+		EnterRule("T__9", 1);
+		TraceIn("T__9", 1);
 		try
 		{
-			int _type = T__7;
+			int _type = T__9;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:11:6: ( ',' )
 			DebugEnterAlt(1);
@@ -113,79 +115,8 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__7", 1);
-			LeaveRule("T__7", 1);
-			LeaveRule_T__7();
-		}
-	}
-	// $ANTLR end "T__7"
-
-	partial void EnterRule_T__8();
-	partial void LeaveRule_T__8();
-
-	// $ANTLR start "T__8"
-	[GrammarRule("T__8")]
-	private void mT__8()
-	{
-		EnterRule_T__8();
-		EnterRule("T__8", 2);
-		TraceIn("T__8", 2);
-		try
-		{
-			int _type = T__8;
-			int _channel = DefaultTokenChannel;
-			// ..\\..\\NameParsing\\CSharpNames.g:12:6: ( '.' )
-			DebugEnterAlt(1);
-			// ..\\..\\NameParsing\\CSharpNames.g:12:8: '.'
-			{
-			DebugLocation(12, 8);
-			Match('.'); 
-
-			}
-
-			state.type = _type;
-			state.channel = _channel;
-		}
-		finally
-		{
-			TraceOut("T__8", 2);
-			LeaveRule("T__8", 2);
-			LeaveRule_T__8();
-		}
-	}
-	// $ANTLR end "T__8"
-
-	partial void EnterRule_T__9();
-	partial void LeaveRule_T__9();
-
-	// $ANTLR start "T__9"
-	[GrammarRule("T__9")]
-	private void mT__9()
-	{
-		EnterRule_T__9();
-		EnterRule("T__9", 3);
-		TraceIn("T__9", 3);
-		try
-		{
-			int _type = T__9;
-			int _channel = DefaultTokenChannel;
-			// ..\\..\\NameParsing\\CSharpNames.g:13:6: ( '::' )
-			DebugEnterAlt(1);
-			// ..\\..\\NameParsing\\CSharpNames.g:13:8: '::'
-			{
-			DebugLocation(13, 8);
-			Match("::"); 
-
-
-			}
-
-			state.type = _type;
-			state.channel = _channel;
-		}
-		finally
-		{
-			TraceOut("T__9", 3);
-			LeaveRule("T__9", 3);
+			TraceOut("T__9", 1);
+			LeaveRule("T__9", 1);
 			LeaveRule_T__9();
 		}
 	}
@@ -199,11 +130,82 @@ namespace  CSharpSyntax.NameParsing
 	private void mT__10()
 	{
 		EnterRule_T__10();
-		EnterRule("T__10", 4);
-		TraceIn("T__10", 4);
+		EnterRule("T__10", 2);
+		TraceIn("T__10", 2);
 		try
 		{
 			int _type = T__10;
+			int _channel = DefaultTokenChannel;
+			// ..\\..\\NameParsing\\CSharpNames.g:12:7: ( '.' )
+			DebugEnterAlt(1);
+			// ..\\..\\NameParsing\\CSharpNames.g:12:9: '.'
+			{
+			DebugLocation(12, 9);
+			Match('.'); 
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally
+		{
+			TraceOut("T__10", 2);
+			LeaveRule("T__10", 2);
+			LeaveRule_T__10();
+		}
+	}
+	// $ANTLR end "T__10"
+
+	partial void EnterRule_T__11();
+	partial void LeaveRule_T__11();
+
+	// $ANTLR start "T__11"
+	[GrammarRule("T__11")]
+	private void mT__11()
+	{
+		EnterRule_T__11();
+		EnterRule("T__11", 3);
+		TraceIn("T__11", 3);
+		try
+		{
+			int _type = T__11;
+			int _channel = DefaultTokenChannel;
+			// ..\\..\\NameParsing\\CSharpNames.g:13:7: ( '::' )
+			DebugEnterAlt(1);
+			// ..\\..\\NameParsing\\CSharpNames.g:13:9: '::'
+			{
+			DebugLocation(13, 9);
+			Match("::"); 
+
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally
+		{
+			TraceOut("T__11", 3);
+			LeaveRule("T__11", 3);
+			LeaveRule_T__11();
+		}
+	}
+	// $ANTLR end "T__11"
+
+	partial void EnterRule_T__12();
+	partial void LeaveRule_T__12();
+
+	// $ANTLR start "T__12"
+	[GrammarRule("T__12")]
+	private void mT__12()
+	{
+		EnterRule_T__12();
+		EnterRule("T__12", 4);
+		TraceIn("T__12", 4);
+		try
+		{
+			int _type = T__12;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:14:7: ( '<' )
 			DebugEnterAlt(1);
@@ -219,26 +221,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__10", 4);
-			LeaveRule("T__10", 4);
-			LeaveRule_T__10();
+			TraceOut("T__12", 4);
+			LeaveRule("T__12", 4);
+			LeaveRule_T__12();
 		}
 	}
-	// $ANTLR end "T__10"
+	// $ANTLR end "T__12"
 
-	partial void EnterRule_T__11();
-	partial void LeaveRule_T__11();
+	partial void EnterRule_T__13();
+	partial void LeaveRule_T__13();
 
-	// $ANTLR start "T__11"
-	[GrammarRule("T__11")]
-	private void mT__11()
+	// $ANTLR start "T__13"
+	[GrammarRule("T__13")]
+	private void mT__13()
 	{
-		EnterRule_T__11();
-		EnterRule("T__11", 5);
-		TraceIn("T__11", 5);
+		EnterRule_T__13();
+		EnterRule("T__13", 5);
+		TraceIn("T__13", 5);
 		try
 		{
-			int _type = T__11;
+			int _type = T__13;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:15:7: ( '>' )
 			DebugEnterAlt(1);
@@ -254,26 +256,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__11", 5);
-			LeaveRule("T__11", 5);
-			LeaveRule_T__11();
+			TraceOut("T__13", 5);
+			LeaveRule("T__13", 5);
+			LeaveRule_T__13();
 		}
 	}
-	// $ANTLR end "T__11"
+	// $ANTLR end "T__13"
 
-	partial void EnterRule_T__12();
-	partial void LeaveRule_T__12();
+	partial void EnterRule_T__14();
+	partial void LeaveRule_T__14();
 
-	// $ANTLR start "T__12"
-	[GrammarRule("T__12")]
-	private void mT__12()
+	// $ANTLR start "T__14"
+	[GrammarRule("T__14")]
+	private void mT__14()
 	{
-		EnterRule_T__12();
-		EnterRule("T__12", 6);
-		TraceIn("T__12", 6);
+		EnterRule_T__14();
+		EnterRule("T__14", 6);
+		TraceIn("T__14", 6);
 		try
 		{
-			int _type = T__12;
+			int _type = T__14;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:16:7: ( '?' )
 			DebugEnterAlt(1);
@@ -289,26 +291,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__12", 6);
-			LeaveRule("T__12", 6);
-			LeaveRule_T__12();
+			TraceOut("T__14", 6);
+			LeaveRule("T__14", 6);
+			LeaveRule_T__14();
 		}
 	}
-	// $ANTLR end "T__12"
+	// $ANTLR end "T__14"
 
-	partial void EnterRule_T__13();
-	partial void LeaveRule_T__13();
+	partial void EnterRule_T__15();
+	partial void LeaveRule_T__15();
 
-	// $ANTLR start "T__13"
-	[GrammarRule("T__13")]
-	private void mT__13()
+	// $ANTLR start "T__15"
+	[GrammarRule("T__15")]
+	private void mT__15()
 	{
-		EnterRule_T__13();
-		EnterRule("T__13", 7);
-		TraceIn("T__13", 7);
+		EnterRule_T__15();
+		EnterRule("T__15", 7);
+		TraceIn("T__15", 7);
 		try
 		{
-			int _type = T__13;
+			int _type = T__15;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:17:7: ( '[' )
 			DebugEnterAlt(1);
@@ -324,26 +326,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__13", 7);
-			LeaveRule("T__13", 7);
-			LeaveRule_T__13();
+			TraceOut("T__15", 7);
+			LeaveRule("T__15", 7);
+			LeaveRule_T__15();
 		}
 	}
-	// $ANTLR end "T__13"
+	// $ANTLR end "T__15"
 
-	partial void EnterRule_T__14();
-	partial void LeaveRule_T__14();
+	partial void EnterRule_T__16();
+	partial void LeaveRule_T__16();
 
-	// $ANTLR start "T__14"
-	[GrammarRule("T__14")]
-	private void mT__14()
+	// $ANTLR start "T__16"
+	[GrammarRule("T__16")]
+	private void mT__16()
 	{
-		EnterRule_T__14();
-		EnterRule("T__14", 8);
-		TraceIn("T__14", 8);
+		EnterRule_T__16();
+		EnterRule("T__16", 8);
+		TraceIn("T__16", 8);
 		try
 		{
-			int _type = T__14;
+			int _type = T__16;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:18:7: ( ']' )
 			DebugEnterAlt(1);
@@ -359,26 +361,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__14", 8);
-			LeaveRule("T__14", 8);
-			LeaveRule_T__14();
+			TraceOut("T__16", 8);
+			LeaveRule("T__16", 8);
+			LeaveRule_T__16();
 		}
 	}
-	// $ANTLR end "T__14"
+	// $ANTLR end "T__16"
 
-	partial void EnterRule_T__15();
-	partial void LeaveRule_T__15();
+	partial void EnterRule_T__17();
+	partial void LeaveRule_T__17();
 
-	// $ANTLR start "T__15"
-	[GrammarRule("T__15")]
-	private void mT__15()
+	// $ANTLR start "T__17"
+	[GrammarRule("T__17")]
+	private void mT__17()
 	{
-		EnterRule_T__15();
-		EnterRule("T__15", 9);
-		TraceIn("T__15", 9);
+		EnterRule_T__17();
+		EnterRule("T__17", 9);
+		TraceIn("T__17", 9);
 		try
 		{
-			int _type = T__15;
+			int _type = T__17;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:19:7: ( 'bool' )
 			DebugEnterAlt(1);
@@ -395,26 +397,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__15", 9);
-			LeaveRule("T__15", 9);
-			LeaveRule_T__15();
+			TraceOut("T__17", 9);
+			LeaveRule("T__17", 9);
+			LeaveRule_T__17();
 		}
 	}
-	// $ANTLR end "T__15"
+	// $ANTLR end "T__17"
 
-	partial void EnterRule_T__16();
-	partial void LeaveRule_T__16();
+	partial void EnterRule_T__18();
+	partial void LeaveRule_T__18();
 
-	// $ANTLR start "T__16"
-	[GrammarRule("T__16")]
-	private void mT__16()
+	// $ANTLR start "T__18"
+	[GrammarRule("T__18")]
+	private void mT__18()
 	{
-		EnterRule_T__16();
-		EnterRule("T__16", 10);
-		TraceIn("T__16", 10);
+		EnterRule_T__18();
+		EnterRule("T__18", 10);
+		TraceIn("T__18", 10);
 		try
 		{
-			int _type = T__16;
+			int _type = T__18;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:20:7: ( 'byte' )
 			DebugEnterAlt(1);
@@ -431,26 +433,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__16", 10);
-			LeaveRule("T__16", 10);
-			LeaveRule_T__16();
+			TraceOut("T__18", 10);
+			LeaveRule("T__18", 10);
+			LeaveRule_T__18();
 		}
 	}
-	// $ANTLR end "T__16"
+	// $ANTLR end "T__18"
 
-	partial void EnterRule_T__17();
-	partial void LeaveRule_T__17();
+	partial void EnterRule_T__19();
+	partial void LeaveRule_T__19();
 
-	// $ANTLR start "T__17"
-	[GrammarRule("T__17")]
-	private void mT__17()
+	// $ANTLR start "T__19"
+	[GrammarRule("T__19")]
+	private void mT__19()
 	{
-		EnterRule_T__17();
-		EnterRule("T__17", 11);
-		TraceIn("T__17", 11);
+		EnterRule_T__19();
+		EnterRule("T__19", 11);
+		TraceIn("T__19", 11);
 		try
 		{
-			int _type = T__17;
+			int _type = T__19;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:21:7: ( 'char' )
 			DebugEnterAlt(1);
@@ -467,26 +469,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__17", 11);
-			LeaveRule("T__17", 11);
-			LeaveRule_T__17();
+			TraceOut("T__19", 11);
+			LeaveRule("T__19", 11);
+			LeaveRule_T__19();
 		}
 	}
-	// $ANTLR end "T__17"
+	// $ANTLR end "T__19"
 
-	partial void EnterRule_T__18();
-	partial void LeaveRule_T__18();
+	partial void EnterRule_T__20();
+	partial void LeaveRule_T__20();
 
-	// $ANTLR start "T__18"
-	[GrammarRule("T__18")]
-	private void mT__18()
+	// $ANTLR start "T__20"
+	[GrammarRule("T__20")]
+	private void mT__20()
 	{
-		EnterRule_T__18();
-		EnterRule("T__18", 12);
-		TraceIn("T__18", 12);
+		EnterRule_T__20();
+		EnterRule("T__20", 12);
+		TraceIn("T__20", 12);
 		try
 		{
-			int _type = T__18;
+			int _type = T__20;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:22:7: ( 'decimal' )
 			DebugEnterAlt(1);
@@ -503,26 +505,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__18", 12);
-			LeaveRule("T__18", 12);
-			LeaveRule_T__18();
+			TraceOut("T__20", 12);
+			LeaveRule("T__20", 12);
+			LeaveRule_T__20();
 		}
 	}
-	// $ANTLR end "T__18"
+	// $ANTLR end "T__20"
 
-	partial void EnterRule_T__19();
-	partial void LeaveRule_T__19();
+	partial void EnterRule_T__21();
+	partial void LeaveRule_T__21();
 
-	// $ANTLR start "T__19"
-	[GrammarRule("T__19")]
-	private void mT__19()
+	// $ANTLR start "T__21"
+	[GrammarRule("T__21")]
+	private void mT__21()
 	{
-		EnterRule_T__19();
-		EnterRule("T__19", 13);
-		TraceIn("T__19", 13);
+		EnterRule_T__21();
+		EnterRule("T__21", 13);
+		TraceIn("T__21", 13);
 		try
 		{
-			int _type = T__19;
+			int _type = T__21;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:23:7: ( 'double' )
 			DebugEnterAlt(1);
@@ -539,26 +541,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__19", 13);
-			LeaveRule("T__19", 13);
-			LeaveRule_T__19();
+			TraceOut("T__21", 13);
+			LeaveRule("T__21", 13);
+			LeaveRule_T__21();
 		}
 	}
-	// $ANTLR end "T__19"
+	// $ANTLR end "T__21"
 
-	partial void EnterRule_T__20();
-	partial void LeaveRule_T__20();
+	partial void EnterRule_T__22();
+	partial void LeaveRule_T__22();
 
-	// $ANTLR start "T__20"
-	[GrammarRule("T__20")]
-	private void mT__20()
+	// $ANTLR start "T__22"
+	[GrammarRule("T__22")]
+	private void mT__22()
 	{
-		EnterRule_T__20();
-		EnterRule("T__20", 14);
-		TraceIn("T__20", 14);
+		EnterRule_T__22();
+		EnterRule("T__22", 14);
+		TraceIn("T__22", 14);
 		try
 		{
-			int _type = T__20;
+			int _type = T__22;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:24:7: ( 'float' )
 			DebugEnterAlt(1);
@@ -575,26 +577,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__20", 14);
-			LeaveRule("T__20", 14);
-			LeaveRule_T__20();
+			TraceOut("T__22", 14);
+			LeaveRule("T__22", 14);
+			LeaveRule_T__22();
 		}
 	}
-	// $ANTLR end "T__20"
+	// $ANTLR end "T__22"
 
-	partial void EnterRule_T__21();
-	partial void LeaveRule_T__21();
+	partial void EnterRule_T__23();
+	partial void LeaveRule_T__23();
 
-	// $ANTLR start "T__21"
-	[GrammarRule("T__21")]
-	private void mT__21()
+	// $ANTLR start "T__23"
+	[GrammarRule("T__23")]
+	private void mT__23()
 	{
-		EnterRule_T__21();
-		EnterRule("T__21", 15);
-		TraceIn("T__21", 15);
+		EnterRule_T__23();
+		EnterRule("T__23", 15);
+		TraceIn("T__23", 15);
 		try
 		{
-			int _type = T__21;
+			int _type = T__23;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:25:7: ( 'int' )
 			DebugEnterAlt(1);
@@ -611,26 +613,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__21", 15);
-			LeaveRule("T__21", 15);
-			LeaveRule_T__21();
+			TraceOut("T__23", 15);
+			LeaveRule("T__23", 15);
+			LeaveRule_T__23();
 		}
 	}
-	// $ANTLR end "T__21"
+	// $ANTLR end "T__23"
 
-	partial void EnterRule_T__22();
-	partial void LeaveRule_T__22();
+	partial void EnterRule_T__24();
+	partial void LeaveRule_T__24();
 
-	// $ANTLR start "T__22"
-	[GrammarRule("T__22")]
-	private void mT__22()
+	// $ANTLR start "T__24"
+	[GrammarRule("T__24")]
+	private void mT__24()
 	{
-		EnterRule_T__22();
-		EnterRule("T__22", 16);
-		TraceIn("T__22", 16);
+		EnterRule_T__24();
+		EnterRule("T__24", 16);
+		TraceIn("T__24", 16);
 		try
 		{
-			int _type = T__22;
+			int _type = T__24;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:26:7: ( 'long' )
 			DebugEnterAlt(1);
@@ -647,26 +649,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__22", 16);
-			LeaveRule("T__22", 16);
-			LeaveRule_T__22();
+			TraceOut("T__24", 16);
+			LeaveRule("T__24", 16);
+			LeaveRule_T__24();
 		}
 	}
-	// $ANTLR end "T__22"
+	// $ANTLR end "T__24"
 
-	partial void EnterRule_T__23();
-	partial void LeaveRule_T__23();
+	partial void EnterRule_T__25();
+	partial void LeaveRule_T__25();
 
-	// $ANTLR start "T__23"
-	[GrammarRule("T__23")]
-	private void mT__23()
+	// $ANTLR start "T__25"
+	[GrammarRule("T__25")]
+	private void mT__25()
 	{
-		EnterRule_T__23();
-		EnterRule("T__23", 17);
-		TraceIn("T__23", 17);
+		EnterRule_T__25();
+		EnterRule("T__25", 17);
+		TraceIn("T__25", 17);
 		try
 		{
-			int _type = T__23;
+			int _type = T__25;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:27:7: ( 'object' )
 			DebugEnterAlt(1);
@@ -683,26 +685,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__23", 17);
-			LeaveRule("T__23", 17);
-			LeaveRule_T__23();
+			TraceOut("T__25", 17);
+			LeaveRule("T__25", 17);
+			LeaveRule_T__25();
 		}
 	}
-	// $ANTLR end "T__23"
+	// $ANTLR end "T__25"
 
-	partial void EnterRule_T__24();
-	partial void LeaveRule_T__24();
+	partial void EnterRule_T__26();
+	partial void LeaveRule_T__26();
 
-	// $ANTLR start "T__24"
-	[GrammarRule("T__24")]
-	private void mT__24()
+	// $ANTLR start "T__26"
+	[GrammarRule("T__26")]
+	private void mT__26()
 	{
-		EnterRule_T__24();
-		EnterRule("T__24", 18);
-		TraceIn("T__24", 18);
+		EnterRule_T__26();
+		EnterRule("T__26", 18);
+		TraceIn("T__26", 18);
 		try
 		{
-			int _type = T__24;
+			int _type = T__26;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:28:7: ( 'sbyte' )
 			DebugEnterAlt(1);
@@ -719,26 +721,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__24", 18);
-			LeaveRule("T__24", 18);
-			LeaveRule_T__24();
+			TraceOut("T__26", 18);
+			LeaveRule("T__26", 18);
+			LeaveRule_T__26();
 		}
 	}
-	// $ANTLR end "T__24"
+	// $ANTLR end "T__26"
 
-	partial void EnterRule_T__25();
-	partial void LeaveRule_T__25();
+	partial void EnterRule_T__27();
+	partial void LeaveRule_T__27();
 
-	// $ANTLR start "T__25"
-	[GrammarRule("T__25")]
-	private void mT__25()
+	// $ANTLR start "T__27"
+	[GrammarRule("T__27")]
+	private void mT__27()
 	{
-		EnterRule_T__25();
-		EnterRule("T__25", 19);
-		TraceIn("T__25", 19);
+		EnterRule_T__27();
+		EnterRule("T__27", 19);
+		TraceIn("T__27", 19);
 		try
 		{
-			int _type = T__25;
+			int _type = T__27;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:29:7: ( 'short' )
 			DebugEnterAlt(1);
@@ -755,26 +757,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__25", 19);
-			LeaveRule("T__25", 19);
-			LeaveRule_T__25();
+			TraceOut("T__27", 19);
+			LeaveRule("T__27", 19);
+			LeaveRule_T__27();
 		}
 	}
-	// $ANTLR end "T__25"
+	// $ANTLR end "T__27"
 
-	partial void EnterRule_T__26();
-	partial void LeaveRule_T__26();
+	partial void EnterRule_T__28();
+	partial void LeaveRule_T__28();
 
-	// $ANTLR start "T__26"
-	[GrammarRule("T__26")]
-	private void mT__26()
+	// $ANTLR start "T__28"
+	[GrammarRule("T__28")]
+	private void mT__28()
 	{
-		EnterRule_T__26();
-		EnterRule("T__26", 20);
-		TraceIn("T__26", 20);
+		EnterRule_T__28();
+		EnterRule("T__28", 20);
+		TraceIn("T__28", 20);
 		try
 		{
-			int _type = T__26;
+			int _type = T__28;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:30:7: ( 'string' )
 			DebugEnterAlt(1);
@@ -791,26 +793,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__26", 20);
-			LeaveRule("T__26", 20);
-			LeaveRule_T__26();
+			TraceOut("T__28", 20);
+			LeaveRule("T__28", 20);
+			LeaveRule_T__28();
 		}
 	}
-	// $ANTLR end "T__26"
+	// $ANTLR end "T__28"
 
-	partial void EnterRule_T__27();
-	partial void LeaveRule_T__27();
+	partial void EnterRule_T__29();
+	partial void LeaveRule_T__29();
 
-	// $ANTLR start "T__27"
-	[GrammarRule("T__27")]
-	private void mT__27()
+	// $ANTLR start "T__29"
+	[GrammarRule("T__29")]
+	private void mT__29()
 	{
-		EnterRule_T__27();
-		EnterRule("T__27", 21);
-		TraceIn("T__27", 21);
+		EnterRule_T__29();
+		EnterRule("T__29", 21);
+		TraceIn("T__29", 21);
 		try
 		{
-			int _type = T__27;
+			int _type = T__29;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:31:7: ( 'uint' )
 			DebugEnterAlt(1);
@@ -827,26 +829,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__27", 21);
-			LeaveRule("T__27", 21);
-			LeaveRule_T__27();
+			TraceOut("T__29", 21);
+			LeaveRule("T__29", 21);
+			LeaveRule_T__29();
 		}
 	}
-	// $ANTLR end "T__27"
+	// $ANTLR end "T__29"
 
-	partial void EnterRule_T__28();
-	partial void LeaveRule_T__28();
+	partial void EnterRule_T__30();
+	partial void LeaveRule_T__30();
 
-	// $ANTLR start "T__28"
-	[GrammarRule("T__28")]
-	private void mT__28()
+	// $ANTLR start "T__30"
+	[GrammarRule("T__30")]
+	private void mT__30()
 	{
-		EnterRule_T__28();
-		EnterRule("T__28", 22);
-		TraceIn("T__28", 22);
+		EnterRule_T__30();
+		EnterRule("T__30", 22);
+		TraceIn("T__30", 22);
 		try
 		{
-			int _type = T__28;
+			int _type = T__30;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:32:7: ( 'ulong' )
 			DebugEnterAlt(1);
@@ -863,26 +865,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__28", 22);
-			LeaveRule("T__28", 22);
-			LeaveRule_T__28();
+			TraceOut("T__30", 22);
+			LeaveRule("T__30", 22);
+			LeaveRule_T__30();
 		}
 	}
-	// $ANTLR end "T__28"
+	// $ANTLR end "T__30"
 
-	partial void EnterRule_T__29();
-	partial void LeaveRule_T__29();
+	partial void EnterRule_T__31();
+	partial void LeaveRule_T__31();
 
-	// $ANTLR start "T__29"
-	[GrammarRule("T__29")]
-	private void mT__29()
+	// $ANTLR start "T__31"
+	[GrammarRule("T__31")]
+	private void mT__31()
 	{
-		EnterRule_T__29();
-		EnterRule("T__29", 23);
-		TraceIn("T__29", 23);
+		EnterRule_T__31();
+		EnterRule("T__31", 23);
+		TraceIn("T__31", 23);
 		try
 		{
-			int _type = T__29;
+			int _type = T__31;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:33:7: ( 'ushort' )
 			DebugEnterAlt(1);
@@ -899,26 +901,26 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__29", 23);
-			LeaveRule("T__29", 23);
-			LeaveRule_T__29();
+			TraceOut("T__31", 23);
+			LeaveRule("T__31", 23);
+			LeaveRule_T__31();
 		}
 	}
-	// $ANTLR end "T__29"
+	// $ANTLR end "T__31"
 
-	partial void EnterRule_T__30();
-	partial void LeaveRule_T__30();
+	partial void EnterRule_T__32();
+	partial void LeaveRule_T__32();
 
-	// $ANTLR start "T__30"
-	[GrammarRule("T__30")]
-	private void mT__30()
+	// $ANTLR start "T__32"
+	[GrammarRule("T__32")]
+	private void mT__32()
 	{
-		EnterRule_T__30();
-		EnterRule("T__30", 24);
-		TraceIn("T__30", 24);
+		EnterRule_T__32();
+		EnterRule("T__32", 24);
+		TraceIn("T__32", 24);
 		try
 		{
-			int _type = T__30;
+			int _type = T__32;
 			int _channel = DefaultTokenChannel;
 			// ..\\..\\NameParsing\\CSharpNames.g:34:7: ( 'void' )
 			DebugEnterAlt(1);
@@ -935,104 +937,30 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("T__30", 24);
-			LeaveRule("T__30", 24);
-			LeaveRule_T__30();
+			TraceOut("T__32", 24);
+			LeaveRule("T__32", 24);
+			LeaveRule_T__32();
 		}
 	}
-	// $ANTLR end "T__30"
+	// $ANTLR end "T__32"
 
-	partial void EnterRule_IDENTIFIER();
-	partial void LeaveRule_IDENTIFIER();
+	partial void EnterRule_IDENTIFIER_START_ASCII();
+	partial void LeaveRule_IDENTIFIER_START_ASCII();
 
-	// $ANTLR start "IDENTIFIER"
-	[GrammarRule("IDENTIFIER")]
-	private void mIDENTIFIER()
+	// $ANTLR start "IDENTIFIER_START_ASCII"
+	[GrammarRule("IDENTIFIER_START_ASCII")]
+	private void mIDENTIFIER_START_ASCII()
 	{
-		EnterRule_IDENTIFIER();
-		EnterRule("IDENTIFIER", 25);
-		TraceIn("IDENTIFIER", 25);
+		EnterRule_IDENTIFIER_START_ASCII();
+		EnterRule("IDENTIFIER_START_ASCII", 25);
+		TraceIn("IDENTIFIER_START_ASCII", 25);
 		try
 		{
-			int _type = IDENTIFIER;
-			int _channel = DefaultTokenChannel;
-			// ..\\..\\NameParsing\\CSharpNames.g:181:2: ( LETTER ( LETTER | '0' .. '9' )* )
-			DebugEnterAlt(1);
-			// ..\\..\\NameParsing\\CSharpNames.g:181:4: LETTER ( LETTER | '0' .. '9' )*
-			{
-			DebugLocation(181, 4);
-			mLETTER(); 
-			DebugLocation(181, 11);
-			// ..\\..\\NameParsing\\CSharpNames.g:181:11: ( LETTER | '0' .. '9' )*
-			try { DebugEnterSubRule(1);
-			while (true)
-			{
-				int alt1=2;
-				try { DebugEnterDecision(1, false);
-				int LA1_1 = input.LA(1);
-
-				if (((LA1_1>='0' && LA1_1<='9')||(LA1_1>='A' && LA1_1<='Z')||LA1_1=='_'||(LA1_1>='a' && LA1_1<='z')))
-				{
-					alt1 = 1;
-				}
-
-
-				} finally { DebugExitDecision(1); }
-				switch ( alt1 )
-				{
-				case 1:
-					DebugEnterAlt(1);
-					// ..\\..\\NameParsing\\CSharpNames.g:
-					{
-					DebugLocation(181, 11);
-					input.Consume();
-
-
-					}
-					break;
-
-				default:
-					goto loop1;
-				}
-			}
-
-			loop1:
-				;
-
-			} finally { DebugExitSubRule(1); }
-
-
-			}
-
-			state.type = _type;
-			state.channel = _channel;
-		}
-		finally
-		{
-			TraceOut("IDENTIFIER", 25);
-			LeaveRule("IDENTIFIER", 25);
-			LeaveRule_IDENTIFIER();
-		}
-	}
-	// $ANTLR end "IDENTIFIER"
-
-	partial void EnterRule_LETTER();
-	partial void LeaveRule_LETTER();
-
-	// $ANTLR start "LETTER"
-	[GrammarRule("LETTER")]
-	private void mLETTER()
-	{
-		EnterRule_LETTER();
-		EnterRule("LETTER", 26);
-		TraceIn("LETTER", 26);
-		try
-		{
-			// ..\\..\\NameParsing\\CSharpNames.g:187:2: ( 'A' .. 'Z' | 'a' .. 'z' | '_' )
+			// ..\\..\\NameParsing\\CSharpNames.g:184:2: ( 'a' .. 'z' | 'A' .. 'Z' | '_' )
 			DebugEnterAlt(1);
 			// ..\\..\\NameParsing\\CSharpNames.g:
 			{
-			DebugLocation(187, 2);
+			DebugLocation(184, 2);
 			if ((input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z'))
 			{
 				input.Consume();
@@ -1051,12 +979,288 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("LETTER", 26);
-			LeaveRule("LETTER", 26);
-			LeaveRule_LETTER();
+			TraceOut("IDENTIFIER_START_ASCII", 25);
+			LeaveRule("IDENTIFIER_START_ASCII", 25);
+			LeaveRule_IDENTIFIER_START_ASCII();
 		}
 	}
-	// $ANTLR end "LETTER"
+	// $ANTLR end "IDENTIFIER_START_ASCII"
+
+	partial void EnterRule_IDENTIFIER_PART();
+	partial void LeaveRule_IDENTIFIER_PART();
+
+	// $ANTLR start "IDENTIFIER_PART"
+	[GrammarRule("IDENTIFIER_PART")]
+	private void mIDENTIFIER_PART()
+	{
+		EnterRule_IDENTIFIER_PART();
+		EnterRule("IDENTIFIER_PART", 26);
+		TraceIn("IDENTIFIER_PART", 26);
+		try
+		{
+			// ..\\..\\NameParsing\\CSharpNames.g:194:2: ( '0' .. '9' | IDENTIFIER_START_ASCII |{...}?)
+			int alt1=3;
+			try { DebugEnterDecision(1, false);
+			switch (input.LA(1))
+			{
+			case '0':
+			case '1':
+			case '2':
+			case '3':
+			case '4':
+			case '5':
+			case '6':
+			case '7':
+			case '8':
+			case '9':
+				{
+				alt1 = 1;
+				}
+				break;
+			case 'A':
+			case 'B':
+			case 'C':
+			case 'D':
+			case 'E':
+			case 'F':
+			case 'G':
+			case 'H':
+			case 'I':
+			case 'J':
+			case 'K':
+			case 'L':
+			case 'M':
+			case 'N':
+			case 'O':
+			case 'P':
+			case 'Q':
+			case 'R':
+			case 'S':
+			case 'T':
+			case 'U':
+			case 'V':
+			case 'W':
+			case 'X':
+			case 'Y':
+			case 'Z':
+			case '_':
+			case 'a':
+			case 'b':
+			case 'c':
+			case 'd':
+			case 'e':
+			case 'f':
+			case 'g':
+			case 'h':
+			case 'i':
+			case 'j':
+			case 'k':
+			case 'l':
+			case 'm':
+			case 'n':
+			case 'o':
+			case 'p':
+			case 'q':
+			case 'r':
+			case 's':
+			case 't':
+			case 'u':
+			case 'v':
+			case 'w':
+			case 'x':
+			case 'y':
+			case 'z':
+				{
+				alt1 = 2;
+				}
+				break;
+			default:
+				alt1=3;
+				break;
+
+			}
+
+			} finally { DebugExitDecision(1); }
+			switch (alt1)
+			{
+			case 1:
+				DebugEnterAlt(1);
+				// ..\\..\\NameParsing\\CSharpNames.g:194:4: '0' .. '9'
+				{
+				DebugLocation(194, 4);
+				MatchRange('0','9'); 
+
+				}
+				break;
+			case 2:
+				DebugEnterAlt(2);
+				// ..\\..\\NameParsing\\CSharpNames.g:195:4: IDENTIFIER_START_ASCII
+				{
+				DebugLocation(195, 4);
+				mIDENTIFIER_START_ASCII(); 
+
+				}
+				break;
+			case 3:
+				DebugEnterAlt(3);
+				// ..\\..\\NameParsing\\CSharpNames.g:196:4: {...}?
+				{
+				DebugLocation(196, 4);
+				if (!(( IsIdentifierPartUnicode(input.LA(1)) )))
+				{
+					throw new FailedPredicateException(input, "IDENTIFIER_PART", " IsIdentifierPartUnicode(input.LA(1)) ");
+				}
+				DebugLocation(196, 46);
+				 MatchAny(); 
+
+				}
+				break;
+
+			}
+		}
+		finally
+		{
+			TraceOut("IDENTIFIER_PART", 26);
+			LeaveRule("IDENTIFIER_PART", 26);
+			LeaveRule_IDENTIFIER_PART();
+		}
+	}
+	// $ANTLR end "IDENTIFIER_PART"
+
+	partial void EnterRule_IDENTIFIER_NAME_ASCII_START();
+	partial void LeaveRule_IDENTIFIER_NAME_ASCII_START();
+
+	// $ANTLR start "IDENTIFIER_NAME_ASCII_START"
+	[GrammarRule("IDENTIFIER_NAME_ASCII_START")]
+	private void mIDENTIFIER_NAME_ASCII_START()
+	{
+		EnterRule_IDENTIFIER_NAME_ASCII_START();
+		EnterRule("IDENTIFIER_NAME_ASCII_START", 27);
+		TraceIn("IDENTIFIER_NAME_ASCII_START", 27);
+		try
+		{
+			// ..\\..\\NameParsing\\CSharpNames.g:201:2: ( IDENTIFIER_START_ASCII ( IDENTIFIER_PART )* )
+			DebugEnterAlt(1);
+			// ..\\..\\NameParsing\\CSharpNames.g:201:4: IDENTIFIER_START_ASCII ( IDENTIFIER_PART )*
+			{
+			DebugLocation(201, 4);
+			mIDENTIFIER_START_ASCII(); 
+			DebugLocation(201, 27);
+			// ..\\..\\NameParsing\\CSharpNames.g:201:27: ( IDENTIFIER_PART )*
+			try { DebugEnterSubRule(2);
+			while (true)
+			{
+				int alt2=2;
+				try { DebugEnterDecision(2, false);
+				int LA2_1 = input.LA(1);
+
+				if (((LA2_1>='0' && LA2_1<='9')||(LA2_1>='A' && LA2_1<='Z')||LA2_1=='_'||(LA2_1>='a' && LA2_1<='z')))
+				{
+					alt2 = 1;
+				}
+				else if ((( IsIdentifierPartUnicode(input.LA(1)) )))
+				{
+					alt2 = 1;
+				}
+
+
+				} finally { DebugExitDecision(2); }
+				switch ( alt2 )
+				{
+				case 1:
+					DebugEnterAlt(1);
+					// ..\\..\\NameParsing\\CSharpNames.g:201:27: IDENTIFIER_PART
+					{
+					DebugLocation(201, 27);
+					mIDENTIFIER_PART(); 
+
+					}
+					break;
+
+				default:
+					goto loop2;
+				}
+			}
+
+			loop2:
+				;
+
+			} finally { DebugExitSubRule(2); }
+
+
+			}
+
+		}
+		finally
+		{
+			TraceOut("IDENTIFIER_NAME_ASCII_START", 27);
+			LeaveRule("IDENTIFIER_NAME_ASCII_START", 27);
+			LeaveRule_IDENTIFIER_NAME_ASCII_START();
+		}
+	}
+	// $ANTLR end "IDENTIFIER_NAME_ASCII_START"
+
+	partial void EnterRule_IDENTIFIER();
+	partial void LeaveRule_IDENTIFIER();
+
+	// $ANTLR start "IDENTIFIER"
+	[GrammarRule("IDENTIFIER")]
+	private void mIDENTIFIER()
+	{
+		EnterRule_IDENTIFIER();
+		EnterRule("IDENTIFIER", 28);
+		TraceIn("IDENTIFIER", 28);
+		try
+		{
+			int _type = IDENTIFIER;
+			int _channel = DefaultTokenChannel;
+			// ..\\..\\NameParsing\\CSharpNames.g:217:2: ( IDENTIFIER_NAME_ASCII_START |)
+			int alt3=2;
+			try { DebugEnterDecision(3, false);
+			int LA3_1 = input.LA(1);
+
+			if (((LA3_1>='A' && LA3_1<='Z')||LA3_1=='_'||(LA3_1>='a' && LA3_1<='z')))
+			{
+				alt3 = 1;
+			}
+			else
+			{
+				alt3 = 2;
+			}
+			} finally { DebugExitDecision(3); }
+			switch (alt3)
+			{
+			case 1:
+				DebugEnterAlt(1);
+				// ..\\..\\NameParsing\\CSharpNames.g:217:4: IDENTIFIER_NAME_ASCII_START
+				{
+				DebugLocation(217, 4);
+				mIDENTIFIER_NAME_ASCII_START(); 
+
+				}
+				break;
+			case 2:
+				DebugEnterAlt(2);
+				// ..\\..\\NameParsing\\CSharpNames.g:218:4: 
+				{
+				DebugLocation(218, 4);
+				 ConsumeIdentifierUnicodeStart(); 
+
+				}
+				break;
+
+			}
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally
+		{
+			TraceOut("IDENTIFIER", 28);
+			LeaveRule("IDENTIFIER", 28);
+			LeaveRule_IDENTIFIER();
+		}
+	}
+	// $ANTLR end "IDENTIFIER"
 
 	partial void EnterRule_WS();
 	partial void LeaveRule_WS();
@@ -1066,40 +1270,40 @@ namespace  CSharpSyntax.NameParsing
 	private void mWS()
 	{
 		EnterRule_WS();
-		EnterRule("WS", 27);
-		TraceIn("WS", 27);
+		EnterRule("WS", 29);
+		TraceIn("WS", 29);
 		try
 		{
 			int _type = WS;
 			int _channel = DefaultTokenChannel;
-			// ..\\..\\NameParsing\\CSharpNames.g:192:2: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+			// ..\\..\\NameParsing\\CSharpNames.g:222:2: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
 			DebugEnterAlt(1);
-			// ..\\..\\NameParsing\\CSharpNames.g:192:4: ( ' ' | '\\t' | '\\r' | '\\n' )+
+			// ..\\..\\NameParsing\\CSharpNames.g:222:4: ( ' ' | '\\t' | '\\r' | '\\n' )+
 			{
-			DebugLocation(192, 4);
-			// ..\\..\\NameParsing\\CSharpNames.g:192:4: ( ' ' | '\\t' | '\\r' | '\\n' )+
-			int cnt2=0;
-			try { DebugEnterSubRule(2);
+			DebugLocation(222, 4);
+			// ..\\..\\NameParsing\\CSharpNames.g:222:4: ( ' ' | '\\t' | '\\r' | '\\n' )+
+			int cnt4=0;
+			try { DebugEnterSubRule(4);
 			while (true)
 			{
-				int alt2=2;
-				try { DebugEnterDecision(2, false);
-				int LA2_1 = input.LA(1);
+				int alt4=2;
+				try { DebugEnterDecision(4, false);
+				int LA4_1 = input.LA(1);
 
-				if (((LA2_1>='\t' && LA2_1<='\n')||LA2_1=='\r'||LA2_1==' '))
+				if (((LA4_1>='\t' && LA4_1<='\n')||LA4_1=='\r'||LA4_1==' '))
 				{
-					alt2 = 1;
+					alt4 = 1;
 				}
 
 
-				} finally { DebugExitDecision(2); }
-				switch (alt2)
+				} finally { DebugExitDecision(4); }
+				switch (alt4)
 				{
 				case 1:
 					DebugEnterAlt(1);
 					// ..\\..\\NameParsing\\CSharpNames.g:
 					{
-					DebugLocation(192, 4);
+					DebugLocation(222, 4);
 					input.Consume();
 
 
@@ -1107,21 +1311,21 @@ namespace  CSharpSyntax.NameParsing
 					break;
 
 				default:
-					if (cnt2 >= 1)
-						goto loop2;
+					if (cnt4 >= 1)
+						goto loop4;
 
-					EarlyExitException eee2 = new EarlyExitException( 2, input );
-					DebugRecognitionException(eee2);
-					throw eee2;
+					EarlyExitException eee4 = new EarlyExitException( 4, input );
+					DebugRecognitionException(eee4);
+					throw eee4;
 				}
-				cnt2++;
+				cnt4++;
 			}
-			loop2:
+			loop4:
 				;
 
-			} finally { DebugExitSubRule(2); }
+			} finally { DebugExitSubRule(4); }
 
-			DebugLocation(193, 2);
+			DebugLocation(223, 2);
 
 					Skip();
 				
@@ -1133,8 +1337,8 @@ namespace  CSharpSyntax.NameParsing
 		}
 		finally
 		{
-			TraceOut("WS", 27);
-			LeaveRule("WS", 27);
+			TraceOut("WS", 29);
+			LeaveRule("WS", 29);
 			LeaveRule_WS();
 		}
 	}
@@ -1142,251 +1346,251 @@ namespace  CSharpSyntax.NameParsing
 
 	public override void mTokens()
 	{
-		// ..\\..\\NameParsing\\CSharpNames.g:1:8: ( T__7 | T__8 | T__9 | T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | IDENTIFIER | WS )
-		int alt3=26;
-		try { DebugEnterDecision(3, false);
+		// ..\\..\\NameParsing\\CSharpNames.g:1:8: ( T__9 | T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | IDENTIFIER | WS )
+		int alt5=26;
+		try { DebugEnterDecision(5, false);
 		try
 		{
-			alt3 = dfa3.Predict(input);
+			alt5 = dfa5.Predict(input);
 		}
 		catch (NoViableAltException nvae)
 		{
 			DebugRecognitionException(nvae);
 			throw;
 		}
-		} finally { DebugExitDecision(3); }
-		switch (alt3)
+		} finally { DebugExitDecision(5); }
+		switch (alt5)
 		{
 		case 1:
 			DebugEnterAlt(1);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:10: T__7
+			// ..\\..\\NameParsing\\CSharpNames.g:1:10: T__9
 			{
 			DebugLocation(1, 10);
-			mT__7(); 
+			mT__9(); 
 
 			}
 			break;
 		case 2:
 			DebugEnterAlt(2);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:15: T__8
+			// ..\\..\\NameParsing\\CSharpNames.g:1:15: T__10
 			{
 			DebugLocation(1, 15);
-			mT__8(); 
+			mT__10(); 
 
 			}
 			break;
 		case 3:
 			DebugEnterAlt(3);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:20: T__9
+			// ..\\..\\NameParsing\\CSharpNames.g:1:21: T__11
 			{
-			DebugLocation(1, 20);
-			mT__9(); 
+			DebugLocation(1, 21);
+			mT__11(); 
 
 			}
 			break;
 		case 4:
 			DebugEnterAlt(4);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:25: T__10
+			// ..\\..\\NameParsing\\CSharpNames.g:1:27: T__12
 			{
-			DebugLocation(1, 25);
-			mT__10(); 
+			DebugLocation(1, 27);
+			mT__12(); 
 
 			}
 			break;
 		case 5:
 			DebugEnterAlt(5);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:31: T__11
+			// ..\\..\\NameParsing\\CSharpNames.g:1:33: T__13
 			{
-			DebugLocation(1, 31);
-			mT__11(); 
+			DebugLocation(1, 33);
+			mT__13(); 
 
 			}
 			break;
 		case 6:
 			DebugEnterAlt(6);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:37: T__12
+			// ..\\..\\NameParsing\\CSharpNames.g:1:39: T__14
 			{
-			DebugLocation(1, 37);
-			mT__12(); 
+			DebugLocation(1, 39);
+			mT__14(); 
 
 			}
 			break;
 		case 7:
 			DebugEnterAlt(7);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:43: T__13
+			// ..\\..\\NameParsing\\CSharpNames.g:1:45: T__15
 			{
-			DebugLocation(1, 43);
-			mT__13(); 
+			DebugLocation(1, 45);
+			mT__15(); 
 
 			}
 			break;
 		case 8:
 			DebugEnterAlt(8);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:49: T__14
+			// ..\\..\\NameParsing\\CSharpNames.g:1:51: T__16
 			{
-			DebugLocation(1, 49);
-			mT__14(); 
+			DebugLocation(1, 51);
+			mT__16(); 
 
 			}
 			break;
 		case 9:
 			DebugEnterAlt(9);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:55: T__15
+			// ..\\..\\NameParsing\\CSharpNames.g:1:57: T__17
 			{
-			DebugLocation(1, 55);
-			mT__15(); 
+			DebugLocation(1, 57);
+			mT__17(); 
 
 			}
 			break;
 		case 10:
 			DebugEnterAlt(10);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:61: T__16
+			// ..\\..\\NameParsing\\CSharpNames.g:1:63: T__18
 			{
-			DebugLocation(1, 61);
-			mT__16(); 
+			DebugLocation(1, 63);
+			mT__18(); 
 
 			}
 			break;
 		case 11:
 			DebugEnterAlt(11);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:67: T__17
+			// ..\\..\\NameParsing\\CSharpNames.g:1:69: T__19
 			{
-			DebugLocation(1, 67);
-			mT__17(); 
+			DebugLocation(1, 69);
+			mT__19(); 
 
 			}
 			break;
 		case 12:
 			DebugEnterAlt(12);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:73: T__18
+			// ..\\..\\NameParsing\\CSharpNames.g:1:75: T__20
 			{
-			DebugLocation(1, 73);
-			mT__18(); 
+			DebugLocation(1, 75);
+			mT__20(); 
 
 			}
 			break;
 		case 13:
 			DebugEnterAlt(13);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:79: T__19
+			// ..\\..\\NameParsing\\CSharpNames.g:1:81: T__21
 			{
-			DebugLocation(1, 79);
-			mT__19(); 
+			DebugLocation(1, 81);
+			mT__21(); 
 
 			}
 			break;
 		case 14:
 			DebugEnterAlt(14);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:85: T__20
+			// ..\\..\\NameParsing\\CSharpNames.g:1:87: T__22
 			{
-			DebugLocation(1, 85);
-			mT__20(); 
+			DebugLocation(1, 87);
+			mT__22(); 
 
 			}
 			break;
 		case 15:
 			DebugEnterAlt(15);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:91: T__21
+			// ..\\..\\NameParsing\\CSharpNames.g:1:93: T__23
 			{
-			DebugLocation(1, 91);
-			mT__21(); 
+			DebugLocation(1, 93);
+			mT__23(); 
 
 			}
 			break;
 		case 16:
 			DebugEnterAlt(16);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:97: T__22
+			// ..\\..\\NameParsing\\CSharpNames.g:1:99: T__24
 			{
-			DebugLocation(1, 97);
-			mT__22(); 
+			DebugLocation(1, 99);
+			mT__24(); 
 
 			}
 			break;
 		case 17:
 			DebugEnterAlt(17);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:103: T__23
+			// ..\\..\\NameParsing\\CSharpNames.g:1:105: T__25
 			{
-			DebugLocation(1, 103);
-			mT__23(); 
+			DebugLocation(1, 105);
+			mT__25(); 
 
 			}
 			break;
 		case 18:
 			DebugEnterAlt(18);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:109: T__24
+			// ..\\..\\NameParsing\\CSharpNames.g:1:111: T__26
 			{
-			DebugLocation(1, 109);
-			mT__24(); 
+			DebugLocation(1, 111);
+			mT__26(); 
 
 			}
 			break;
 		case 19:
 			DebugEnterAlt(19);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:115: T__25
+			// ..\\..\\NameParsing\\CSharpNames.g:1:117: T__27
 			{
-			DebugLocation(1, 115);
-			mT__25(); 
+			DebugLocation(1, 117);
+			mT__27(); 
 
 			}
 			break;
 		case 20:
 			DebugEnterAlt(20);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:121: T__26
+			// ..\\..\\NameParsing\\CSharpNames.g:1:123: T__28
 			{
-			DebugLocation(1, 121);
-			mT__26(); 
+			DebugLocation(1, 123);
+			mT__28(); 
 
 			}
 			break;
 		case 21:
 			DebugEnterAlt(21);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:127: T__27
+			// ..\\..\\NameParsing\\CSharpNames.g:1:129: T__29
 			{
-			DebugLocation(1, 127);
-			mT__27(); 
+			DebugLocation(1, 129);
+			mT__29(); 
 
 			}
 			break;
 		case 22:
 			DebugEnterAlt(22);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:133: T__28
+			// ..\\..\\NameParsing\\CSharpNames.g:1:135: T__30
 			{
-			DebugLocation(1, 133);
-			mT__28(); 
+			DebugLocation(1, 135);
+			mT__30(); 
 
 			}
 			break;
 		case 23:
 			DebugEnterAlt(23);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:139: T__29
+			// ..\\..\\NameParsing\\CSharpNames.g:1:141: T__31
 			{
-			DebugLocation(1, 139);
-			mT__29(); 
+			DebugLocation(1, 141);
+			mT__31(); 
 
 			}
 			break;
 		case 24:
 			DebugEnterAlt(24);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:145: T__30
+			// ..\\..\\NameParsing\\CSharpNames.g:1:147: T__32
 			{
-			DebugLocation(1, 145);
-			mT__30(); 
+			DebugLocation(1, 147);
+			mT__32(); 
 
 			}
 			break;
 		case 25:
 			DebugEnterAlt(25);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:151: IDENTIFIER
+			// ..\\..\\NameParsing\\CSharpNames.g:1:153: IDENTIFIER
 			{
-			DebugLocation(1, 151);
+			DebugLocation(1, 153);
 			mIDENTIFIER(); 
 
 			}
 			break;
 		case 26:
 			DebugEnterAlt(26);
-			// ..\\..\\NameParsing\\CSharpNames.g:1:162: WS
+			// ..\\..\\NameParsing\\CSharpNames.g:1:164: WS
 			{
-			DebugLocation(1, 162);
+			DebugLocation(1, 164);
 			mWS(); 
 
 			}
@@ -1398,25 +1602,25 @@ namespace  CSharpSyntax.NameParsing
 
 
 	#region DFA
-	DFA3 dfa3;
+	DFA5 dfa5;
 
 	protected override void InitDFAs()
 	{
 		base.InitDFAs();
-		dfa3 = new DFA3(this);
+		dfa5 = new DFA5(this);
 	}
 
-	private class DFA3 : DFA
+	private class DFA5 : DFA
 	{
-		private const string DFA3_eotS =
-			"\x9\xFFFF\xA\x13\x2\xFFFF\x16\x13\x1\x3B\x9\x13\x1\x45\x1\x46\x1\x47"+
-			"\x3\x13\x1\xFFFF\x1\x4B\x4\x13\x1\x50\x2\x13\x1\x53\x3\xFFFF\x2\x13\x1"+
-			"\x56\x1\xFFFF\x1\x13\x1\x58\x1\x59\x1\x13\x1\xFFFF\x1\x5B\x1\x13\x1\xFFFF"+
-			"\x1\x13\x1\x5E\x1\xFFFF\x1\x5F\x2\xFFFF\x1\x60\x1\xFFFF\x1\x61\x1\x62"+
-			"\x5\xFFFF";
-		private const string DFA3_eofS =
+		private const string DFA5_eotS =
+			"\x1\x13\x8\xFFFF\xA\x13\x2\xFFFF\x16\x13\x1\x3B\x9\x13\x1\x45\x1\x46"+
+			"\x1\x47\x3\x13\x1\xFFFF\x1\x4B\x4\x13\x1\x50\x2\x13\x1\x53\x3\xFFFF\x2"+
+			"\x13\x1\x56\x1\xFFFF\x1\x13\x1\x58\x1\x59\x1\x13\x1\xFFFF\x1\x5B\x1\x13"+
+			"\x1\xFFFF\x1\x13\x1\x5E\x1\xFFFF\x1\x5F\x2\xFFFF\x1\x60\x1\xFFFF\x1\x61"+
+			"\x1\x62\x5\xFFFF";
+		private const string DFA5_eofS =
 			"\x63\xFFFF";
-		private const string DFA3_minS =
+		private const string DFA5_minS =
 			"\x1\x9\x8\xFFFF\x1\x6F\x1\x68\x1\x65\x1\x6C\x1\x6E\x1\x6F\x2\x62\x1\x69"+
 			"\x1\x6F\x2\xFFFF\x1\x6F\x1\x74\x1\x61\x1\x63\x1\x75\x1\x6F\x1\x74\x1"+
 			"\x6E\x1\x6A\x1\x79\x1\x6F\x1\x72\x1\x6E\x1\x6F\x1\x68\x1\x69\x1\x6C\x1"+
@@ -1426,8 +1630,8 @@ namespace  CSharpSyntax.NameParsing
 			"\x1\x61\x1\x65\x1\x30\x1\xFFFF\x1\x74\x2\x30\x1\x67\x1\xFFFF\x1\x30\x1"+
 			"\x74\x1\xFFFF\x1\x6C\x1\x30\x1\xFFFF\x1\x30\x2\xFFFF\x1\x30\x1\xFFFF"+
 			"\x2\x30\x5\xFFFF";
-		private const string DFA3_maxS =
-			"\x1\x7A\x8\xFFFF\x1\x79\x1\x68\x1\x6F\x1\x6C\x1\x6E\x1\x6F\x1\x62\x1"+
+		private const string DFA5_maxS =
+			"\x1\x76\x8\xFFFF\x1\x79\x1\x68\x1\x6F\x1\x6C\x1\x6E\x1\x6F\x1\x62\x1"+
 			"\x74\x1\x73\x1\x6F\x2\xFFFF\x1\x6F\x1\x74\x1\x61\x1\x63\x1\x75\x1\x6F"+
 			"\x1\x74\x1\x6E\x1\x6A\x1\x79\x1\x6F\x1\x72\x1\x6E\x1\x6F\x1\x68\x1\x69"+
 			"\x1\x6C\x1\x65\x1\x72\x1\x69\x1\x62\x1\x61\x1\x7A\x1\x67\x1\x65\x1\x74"+
@@ -1436,20 +1640,20 @@ namespace  CSharpSyntax.NameParsing
 			"\x7A\x3\xFFFF\x1\x61\x1\x65\x1\x7A\x1\xFFFF\x1\x74\x2\x7A\x1\x67\x1\xFFFF"+
 			"\x1\x7A\x1\x74\x1\xFFFF\x1\x6C\x1\x7A\x1\xFFFF\x1\x7A\x2\xFFFF\x1\x7A"+
 			"\x1\xFFFF\x2\x7A\x5\xFFFF";
-		private const string DFA3_acceptS =
+		private const string DFA5_acceptS =
 			"\x1\xFFFF\x1\x1\x1\x2\x1\x3\x1\x4\x1\x5\x1\x6\x1\x7\x1\x8\xA\xFFFF\x1"+
 			"\x19\x1\x1A\x26\xFFFF\x1\xF\x9\xFFFF\x1\x9\x1\xA\x1\xB\x3\xFFFF\x1\x10"+
 			"\x4\xFFFF\x1\x15\x2\xFFFF\x1\x18\x2\xFFFF\x1\xE\x1\xFFFF\x1\x12\x1\x13"+
 			"\x1\xFFFF\x1\x16\x2\xFFFF\x1\xD\x1\x11\x1\x14\x1\x17\x1\xC";
-		private const string DFA3_specialS =
+		private const string DFA5_specialS =
 			"\x63\xFFFF}>";
-		private static readonly string[] DFA3_transitionS =
+		private static readonly string[] DFA5_transitionS =
 			{
 				"\x2\x14\x2\xFFFF\x1\x14\x12\xFFFF\x1\x14\xB\xFFFF\x1\x1\x1\xFFFF\x1"+
-				"\x2\xB\xFFFF\x1\x3\x1\xFFFF\x1\x4\x1\xFFFF\x1\x5\x1\x6\x1\xFFFF\x1A"+
-				"\x13\x1\x7\x1\xFFFF\x1\x8\x1\xFFFF\x1\x13\x1\xFFFF\x1\x13\x1\x9\x1\xA"+
-				"\x1\xB\x1\x13\x1\xC\x2\x13\x1\xD\x2\x13\x1\xE\x2\x13\x1\xF\x3\x13\x1"+
-				"\x10\x1\x13\x1\x11\x1\x12\x4\x13",
+				"\x2\xB\xFFFF\x1\x3\x1\xFFFF\x1\x4\x1\xFFFF\x1\x5\x1\x6\x1B\xFFFF\x1"+
+				"\x7\x1\xFFFF\x1\x8\x4\xFFFF\x1\x9\x1\xA\x1\xB\x1\xFFFF\x1\xC\x2\xFFFF"+
+				"\x1\xD\x2\xFFFF\x1\xE\x2\xFFFF\x1\xF\x3\xFFFF\x1\x10\x1\xFFFF\x1\x11"+
+				"\x1\x12",
 				"",
 				"",
 				"",
@@ -1550,38 +1754,38 @@ namespace  CSharpSyntax.NameParsing
 				""
 			};
 
-		private static readonly short[] DFA3_eot = DFA.UnpackEncodedString(DFA3_eotS);
-		private static readonly short[] DFA3_eof = DFA.UnpackEncodedString(DFA3_eofS);
-		private static readonly char[] DFA3_min = DFA.UnpackEncodedStringToUnsignedChars(DFA3_minS);
-		private static readonly char[] DFA3_max = DFA.UnpackEncodedStringToUnsignedChars(DFA3_maxS);
-		private static readonly short[] DFA3_accept = DFA.UnpackEncodedString(DFA3_acceptS);
-		private static readonly short[] DFA3_special = DFA.UnpackEncodedString(DFA3_specialS);
-		private static readonly short[][] DFA3_transition;
+		private static readonly short[] DFA5_eot = DFA.UnpackEncodedString(DFA5_eotS);
+		private static readonly short[] DFA5_eof = DFA.UnpackEncodedString(DFA5_eofS);
+		private static readonly char[] DFA5_min = DFA.UnpackEncodedStringToUnsignedChars(DFA5_minS);
+		private static readonly char[] DFA5_max = DFA.UnpackEncodedStringToUnsignedChars(DFA5_maxS);
+		private static readonly short[] DFA5_accept = DFA.UnpackEncodedString(DFA5_acceptS);
+		private static readonly short[] DFA5_special = DFA.UnpackEncodedString(DFA5_specialS);
+		private static readonly short[][] DFA5_transition;
 
-		static DFA3()
+		static DFA5()
 		{
-			int numStates = DFA3_transitionS.Length;
-			DFA3_transition = new short[numStates][];
+			int numStates = DFA5_transitionS.Length;
+			DFA5_transition = new short[numStates][];
 			for ( int i=0; i < numStates; i++ )
 			{
-				DFA3_transition[i] = DFA.UnpackEncodedString(DFA3_transitionS[i]);
+				DFA5_transition[i] = DFA.UnpackEncodedString(DFA5_transitionS[i]);
 			}
 		}
 
-		public DFA3( BaseRecognizer recognizer )
+		public DFA5( BaseRecognizer recognizer )
 		{
 			this.recognizer = recognizer;
-			this.decisionNumber = 3;
-			this.eot = DFA3_eot;
-			this.eof = DFA3_eof;
-			this.min = DFA3_min;
-			this.max = DFA3_max;
-			this.accept = DFA3_accept;
-			this.special = DFA3_special;
-			this.transition = DFA3_transition;
+			this.decisionNumber = 5;
+			this.eot = DFA5_eot;
+			this.eof = DFA5_eof;
+			this.min = DFA5_min;
+			this.max = DFA5_max;
+			this.accept = DFA5_accept;
+			this.special = DFA5_special;
+			this.transition = DFA5_transition;
 		}
 
-		public override string Description { get { return "1:1: Tokens : ( T__7 | T__8 | T__9 | T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | IDENTIFIER | WS );"; } }
+		public override string Description { get { return "1:1: Tokens : ( T__9 | T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | IDENTIFIER | WS );"; } }
 
 		public override void Error(NoViableAltException nvae)
 		{
